@@ -1,4 +1,4 @@
-#Eugenia Dashboard  Version 2.0.1 01/08/2014 
+#Eugenia Dashboard   
 ————————————————————————————————————————————————————
 
 Welcome to the Eugenia Dashboard 2.0.1 release! 
