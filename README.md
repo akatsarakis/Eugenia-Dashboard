@@ -13,7 +13,7 @@ Usefull Info
 	2.If the server crashes for any reason you may have to go to
    	  ./public/assets/data and create a file with a name "Noty.json"
 
-	3.This server runs by default on host: 127.0.0.1 and port 1340
+	4.This server runs by default on host: 127.0.0.1 and port 1340
 	  you can manualy change them by modifing the file "config.json"
 
 Requirements
