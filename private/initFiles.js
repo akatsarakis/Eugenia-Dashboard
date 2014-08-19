@@ -8,7 +8,6 @@ var fs = require('fs'),
     initDevices = require('./index/initDevices.js');
     initVolumes = require('./index/initVolumes.js');
     initPolicies = require('./index/initPolicies.js');
-    initStatus = require('./index/initStatus.js');
     initTargetsTable = require('./tables/initTargetsTable.js');
     initVolumesTable = require('./tables/initVolumesTable.js');
     //
@@ -33,7 +32,6 @@ function initFiles( state , preState ){
     initDevices(state);
     initVolumes(state);
     initPolicies(state);
-    initStatus(state);
     initVolumesTable(state);
 }
 
