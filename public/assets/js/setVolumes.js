@@ -8,8 +8,7 @@ function setVolumes(){
 		"Online :  " + window.volumes.online + "<br>"+
 		"Offline :  "+ window.volumes.offline +"<br>" +
 		"Degraded :  "+ window.volumes.degraded +" <br>" +
-		"</p>"+
-		"<br><br><br><br><grey id=\"last_update\">Last Update: less than 3 seconds!</grey><br>";
+		"</p>";
 }
 
 //updates volumes chart every 1 second.

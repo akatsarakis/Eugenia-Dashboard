@@ -6,8 +6,7 @@ function setPolicies(){
 	document.getElementById("Policies").innerHTML = "<p>" +
 	    	"Defined :  " + window.policies.defined + " <br>"+
 		"Used :  " + window.policies.used + "<br>"+
-		"Migration :  "+ window.policies.migration +" *<br>" + "</p>"+
-		"<br><br><br><br><grey id=\"last_update\">Last Update: less than 3 seconds!</grey><br>";
+		"Migration :  "+ window.policies.migration +" *<br>" + "</p>";
 }
 
 //updates chart every 1 second.
