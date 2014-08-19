@@ -5,6 +5,7 @@ function setVolumes(){
 
      	if(window.volumes == undefined){return;}
 	document.getElementById("Volumes").innerHTML = "<p>" + 
+	    	"Volumes :  " + window.volumes.volumes + "<br>"+
 		"Online :  " + window.volumes.online + "<br>"+
 		"Offline :  "+ window.volumes.offline +"<br>" +
 		"Degraded :  "+ window.volumes.degraded +" <br>" +

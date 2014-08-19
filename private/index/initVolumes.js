@@ -6,6 +6,7 @@ function initVolumes( state ){
     volumes.online = 0;
     volumes.offline = 0;
     volumes.degraded = 0;
+    volumes.volumes = state.volumes.length; 
     //volumes.
     for(var i = 0; i<state.volumes.length; i++){
 	if(state.volumes[i].active == "ONLINE_HEALTHY"){

@@ -59,12 +59,16 @@ $(document).ready(function() {
 	     { name: 'Data', y: 30, color: '#b2c831' },
 	     { name: 'System', y: 40, color: '#2E8AE6' },
 	     { name: 'Free', y: 30, color: '#3d3d3d' }	],
-	     dataLabels: {
-		 enabled: false,
-		 color: '#000000',
-		 connectorColor: '#000000',
-		 padding : 1
-	     }
+	      dataLabels: {
+                    enabled: true,
+		    connectorColor: '#000000',
+		    padding : 1,
+                    formatter: function() {
+                        return Math.round(this.percentage*100)/100 + ' %';
+                    },
+                    distance: -18,
+                    color:'white'
+             }
 	 }]
     });
 
