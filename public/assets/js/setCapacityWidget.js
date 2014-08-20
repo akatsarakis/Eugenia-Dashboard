@@ -4,12 +4,12 @@ $(document).ready(function() {
     var highchartsOptions = Highcharts.setOptions(Highcharts.theme);
     info = new Highcharts.Chart({
 	chart: {
-	    renderTo: 'CapacityWidget',
+	 renderTo: 'CapacityWidget',
 	 margin: [0, 0, 20, 0],
 	 backgroundColor: null,
 	 plotBackgroundColor: 'none',
-	 height: 240,
-	 width: 300,
+	 height: 305,
+	 width: 500,
 	},
 	 credits: {
 	     enabled: false
@@ -35,16 +35,16 @@ $(document).ready(function() {
 	 },
 	 title: {
 	     text: capacityUnit(0),
-	    y: 100,
+	    y: 140,
 	    x: 0,
 	    style: {
-		font: 'normal 20px Verdana, sans-serif',
+		font: 'normal 30px Verdana, sans-serif',
             }
 	 },
 	 
 	 subtitle: {
             text: 'Total',
-	    y: 120,
+	    y: 160,
 	    x: 0,
 	    style: {
 		font: 'normal 14px Verdana, sans-serif',
