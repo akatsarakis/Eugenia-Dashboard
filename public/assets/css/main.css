@@ -128,7 +128,14 @@ table.performanceTable td {
 	background-image:url('../img/sep-half.png');
 	background-color: #3d3d3d;
 	color:white;
-	height:290px;
+    height:290px;
+}/*
+.capacity{
+    height:100%;
+}*/
+
+.performance{
+    height:50%;
 }
 
 .dash-unit:hover {
@@ -696,7 +703,7 @@ digiclock {
  * Info Section
  */
 .info-aapl {
-  text-align: center;
+  text-align: center
 
 }
 .info-aapl ul {

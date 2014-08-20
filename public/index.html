@@ -126,13 +126,9 @@ $(document).ready(function () {
 	<!-- performance block --> 
 	<div class="col-sm-6 col-lg-6">
 	    <!-- :Performance -->
-	    <div class="dash-unit">
-		<dtitle>performance</dtitle>
+	    <div class="dash-unit performance">
+		<dtitle>Application performance</dtitle>
 		<hr>
-		<div class="info-user">
-		<span aria-hidden="true" class="li_params fs2"></span>
-		</div>
-		<br>
 		<div class="framemail">
 		    <div class="text">
 				<table class="performanceTable" >
@@ -153,7 +149,36 @@ $(document).ready(function () {
 		</div>
 	    </div><!-- /dash-unit -->
 	</div><!-- /span3 -->
+	
+    <div class="col-sm-6 col-lg-6">
+	    <!-- :Performance -->
+	    <div class="dash-unit performance" >
+		<dtitle>Devices performance</dtitle>
+		<hr>
+		
+		<div class="framemail">
+		    <div class="text">
+				<table class="performanceTable" >
+	          <thead>
+	            <tr>
+	              <th>          </th>
+	              <th>IOPS</th>
+	              <th>Throughput</th>
+	              <th>I/O Size</th>
+	              <th>Migration</th>
+		      <th>Reconstuction</th>
+	            </tr>
+	          </thead>
+		  <tbody id="Performance-Devices"> </tbody>
+	         </table><!--/END First Table -->
+		
+		    </div>
+		</div>
+	    </div><!-- /dash-unit -->
+	</div><!-- /span3 -->
 
+
+    
     </div><!---end of first row--->
    
    <!-- second row of blocks/charts -->         
