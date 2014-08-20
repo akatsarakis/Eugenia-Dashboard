@@ -130,7 +130,7 @@ $(document).ready(function () {
 				    <th>Avg Response Time</th>
 				</tr>
 			    </thead>
-			    <tbody id="Performance"> </tbody>
+			    <tbody id="ApplicationPerformance"> </tbody>
 			</table><!--/END First Table -->
 
 		    </div>
@@ -143,25 +143,24 @@ $(document).ready(function () {
 	    <div class="dash-unit performance" >
 		<dtitle>Devices performance</dtitle>
 		<hr>
-		
 		<div class="framemail">
 		    <div class="text">
-				<table class="performanceTable" >
-	          <thead>
-	            <tr>
-	              <th>          </th>
-	              <th>IOPS</th>
-	              <th>Throughput</th>
-	              <th>I/O Size</th>
-	              <th>Migration</th>
-		      <th>Reconstuction</th>
-	            </tr>
-	          </thead>
-		  <tbody id="Performance-Devices"> </tbody>
-	         </table><!--/END First Table -->
-		
+			<table class="performanceTable" >
+			    <thead>
+				<tr>
+				    <th>          </th>
+				    <th>IOPS</th>
+				    <th>Throughput</th>
+				    <th>I/O Size</th>
+				    <th>Avg Response Time</th>
+				</tr>
+			    </thead>
+			    <tbody id="DevicesPerformance"> </tbody>
+			</table><!--/END First Table -->
+
 		    </div>
 		</div>
+
 	    </div><!-- /dash-unit -->
 	</div><!-- /span3 -->
 
@@ -273,7 +272,9 @@ src="assets/js/dash-charts.js"></script>-->
 <script type="text/javascript" src="assets/js/setCapacity.js"></script>
 <script type="text/javascript" src="assets/js/setDevices.js"></script>
 <script type="text/javascript"src="assets/js/setNoty.js"></script>
-<script type="text/javascript" src="assets/js/setPerformance.js"></script>
+<script type="text/javascript" src="assets/js/setApplicationPerformance.js"></script>
+<script type="text/javascript" src="assets/js/setDevicesPerformance.js"></script>
+
 <script type="text/javascript" src="assets/js/setPolicies.js"></script>
 <script type="text/javascript" src="assets/js/setServers.js"></script>
 <script type="text/javascript" src="assets/js/setVolumes.js"></script>

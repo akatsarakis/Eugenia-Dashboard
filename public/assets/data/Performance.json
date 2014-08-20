@@ -1,1 +1,1 @@
-{"read":{"throughput":"3.5 GB/s","IOPS":923.773,"average_response_time":0,"average_request_size":"4.0 KB","migration":0,"reconstruction":0},"write":{"migration":0,"reconstruction":0,"throughput":"0.0 B/s","IOPS":0,"average_response_time":0,"average_request_size":0}}
+{"read":{"throughput":"3.5 GB/s","IOPS":923.773,"average_response_time":0,"average_request_size":"4.0 KB","avg_response_time":0},"write":{"throughput":"0.0 B/s","IOPS":0,"average_response_time":0,"average_request_size":0,"avg_response_time":0},"reconstruction":0,"migration":0}
