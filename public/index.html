@@ -96,31 +96,20 @@ $(document).ready(function () {
     <div class="row">
 
 	<div class="col-sm-6 col-lg-6">
-			<div class="dash-unit">
-	      		<dtitle>Capacity</dtitle>
-				<hr>
-				<!--<div class="info-user">
-				<span aria-hidden="true" class="li_display fs2"></span>
-				</div>-->
-				
-	      		<div class="framemail">
-					<div  id = "Capacity">
-					    	<table class="rightTab" >
-								<!--<td
-								    ><canvas
-								    id="canvas"width="300"height="340"></canvas></td>-->
-								<td><div
-									id="space"></div></td>
-						</table>
-						<div
-						    id="capacityTab"
-						    class
-						    ="leftTab"></div>
-                    </div>
-					
-				</div>			
-			</div>
-		</div>
+	    <div class="dash-unit">
+		<dtitle>Capacity</dtitle>
+		<hr>
+		<div class="framemail">
+		    <div  id = "Capacity">
+			    <div id="CapacityWidget"></div>
+			<!--<table class="rightTab" >-->
+			<!--</table>-->
+			<!--<div id="capacityTab" class
+			    ="leftTab"></div>-->
+		    </div>
+		</div>			
+	    </div>
+	</div>
 
 
 	<!-- performance block --> 
@@ -131,20 +120,19 @@ $(document).ready(function () {
 		<hr>
 		<div class="framemail">
 		    <div class="text">
-				<table class="performanceTable" >
-	          <thead>
-	            <tr>
-	              <th>          </th>
-	              <th>IOPS</th>
-	              <th>Throughput</th>
-	              <th>I/O Size</th>
-	              <th>Migration</th>
-		      <th>Reconstuction</th>
-	            </tr>
-	          </thead>
-		  <tbody id="Performance"> </tbody>
-	         </table><!--/END First Table -->
-		
+			<table class="performanceTable" >
+			    <thead>
+				<tr>
+				    <th>          </th>
+				    <th>IOPS</th>
+				    <th>Throughput</th>
+				    <th>I/O Size</th>
+				    <th>Avg Response Time</th>
+				</tr>
+			    </thead>
+			    <tbody id="Performance"> </tbody>
+			</table><!--/END First Table -->
+
 		    </div>
 		</div>
 	    </div><!-- /dash-unit -->
@@ -180,10 +168,10 @@ $(document).ready(function () {
 
     
     </div><!---end of first row--->
-   
-   <!-- second row of blocks/charts -->         
+
+    <!-- second row of blocks/charts -->         
     <div class="row">  
-		    
+
 	<div class="col-sm-3 col-lg-3">
 	    <!-- server -->
 	    <div class="dash-unit dash-unit-smaller">
@@ -194,27 +182,13 @@ $(document).ready(function () {
 		</div>-->
 		<div class="framemail">
 		    <div class="text" id = "Servers">
-						
+
 		    </div>
 		</div>
 	    </div><!-- /dash-unit -->
 	</div><!-- /span3 -->
 
-	<div class="col-sm-3 col-lg-3">
-	    <!-- devices -->
-	    <div class="dash-unit dash-unit-smaller">
-		<a href="devices.html"><dtitle>devices</dtitle></a>
-		<hr>
-		<!--<div class="info-user">
-		    <span aria-hidden="true" class="li_display fs2"></span>
-		</div>-->
-		<div class="framemail">
-		    <div class="text" id = "Devices">
-						
-		    </div>
-		</div>
-	    </div><!-- /dash-unit -->
-	</div><!-- /span3 -->	
+
 
 	<div class="col-sm-3 col-lg-3">
 	    <!--volumes  -->
@@ -226,12 +200,28 @@ $(document).ready(function () {
 		</div>-->
 		<div class="framemail">
 		    <div class="text" id = "Volumes">
-						
+
 		    </div>	
 		</div>
 	    </div><!-- /dash-unit -->
 	</div><!-- /span3 -->	 
-	
+
+	<div class="col-sm-3 col-lg-3">
+	    <!-- devices -->
+	    <div class="dash-unit dash-unit-smaller">
+		<a href="devices.html"><dtitle>devices</dtitle></a>
+		<hr>
+		<!--<div class="info-user">
+		    <span aria-hidden="true" class="li_display fs2"></span>
+		</div>-->
+		<div class="framemail">
+		    <div class="text" id = "Devices">
+
+		    </div>
+		</div>
+	    </div><!-- /dash-unit -->
+	</div><!-- /span3 -->	
+
 	<div class="col-sm-3 col-lg-3">
 	    <!-- policies block -->
 	    <div class="dash-unit dash-unit-smaller">
@@ -242,18 +232,18 @@ $(document).ready(function () {
 		</div>-->
 		<div class="framemail">
 		    <div class="text" id = "Policies">
-						
+
 		    </div>
 		</div>
 	    </div>
 
 	</div><!-- /span3 -->
 
-	
+
     </div><!-- end of second row -->
 
-		
-    
+
+
 
 </div> <!-- /container -->
 
