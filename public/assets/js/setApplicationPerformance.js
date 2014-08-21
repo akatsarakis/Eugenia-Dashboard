@@ -1,17 +1,62 @@
-function setPerformance(){	
+function setApplicationPerformance(){	
 
-     	if(window.performance.write == undefined){return;}
-	document.getElementById("ApplicationPerformance").innerHTML = "<tr><th>Read</th><td>"+window.performance.read.IOPS+
-	    	      "</td><td>" + window.performance.read.throughput + "</td>" +
-	              "<td>" + window.performance.read.average_request_size + "</td><td>"+window.performance.read.avg_response_time +
-		      "</td></tr>"+"<tr><th>Write</th><td>"+window.performance.write.IOPS+
-	    	      "</td><td>" + window.performance.write.throughput + "</td>" +
-	              "<td>" + window.performance.write.average_request_size + "</td><td>"+window.performance.write.avg_response_time +
-		      "</td></tr>"+"<tr class=\"total\"><th>Total</th>"+
-		      "<td>"+Number(window.performance.read.IOPS+window.performance.write.IOPS)+
-	    	      "</td><td>" + window.performance.read.throughput /*Number(window.performance.read.throughput+ window.performance.write.throughput) */+"</td> "+
-	              "<td>" + window.performance.read.average_request_size /*Number(window.performance.read.average_request_size + window.performance.write.average_request_size)*/ +
-		      "</td><td>"+Number(window.performance.read.avg_response_time + window.performance.write.avg_response_time) +"</td></tr>";
+     	if(window.applicationPerformance.write == undefined){return;}
+	document.getElementById("ApplicationPerformance").innerHTML = 
+	    	      "<tr class=\"total\"><th>Total</th>"+
+		      "<td>"+Number(window.applicationPerformance.read.IOPS+window.applicationPerformance.write.IOPS).toLocaleString()+
+	    	      "</td><td>" + throughputUnit(Number(window.applicationPerformance.read.throughput+ window.applicationPerformance.write.throughput))+"</td> "+
+	              "<td>" +responseTimeUnit( Number(window.applicationPerformance.read.avg_response_time + window.applicationPerformance.write.avg_response_time))+
+		      "</td><td>"+  window.applicationPerformance.read.average_request_size /*Number(window.applicationPerformance.read.average_request_size
+		      + window.applicationPerformance.write.average_request_size)*/ +"</td></tr>"+
+	    	      "<tr><th>Read</th><td>"+window.applicationPerformance.read.IOPS.toLocaleString()+
+	    	      "</td><td>" + throughputUnit( window.applicationPerformance.read.throughput) + "</td>" +
+	              "<td>" + responseTimeUnit(window.applicationPerformance.read.avg_response_time)  +
+		      "</td><td>"+window.applicationPerformance.read.average_request_size +"</td></tr>"+
+		      "<tr><th>Write</th><td>"+window.applicationPerformance.write.IOPS.toLocaleString()+
+	    	      "</td><td>" + throughputUnit( window.applicationPerformance.write.throughput) + "</td>" +
+	              "<td>" + responseTimeUnit(window.applicationPerformance.write.avg_response_time) + "</td><td>"+
+		      window.applicationPerformance.write.average_request_size +"</td></tr>";
  
 };
-setInterval( setPerformance, 1000 );
+setInterval( setApplicationPerformance, 2000 );
+
+function b2mb(b_size){
+    return b_size * 0.000000954
+};
+// transform mb to gb
+function mb2Tb(mb_size){
+    return mb_size * 9.53674316 * Math.pow(10, -7);
+};
+//transform mb to tb
+function mb2Gb(mb_size){
+    return mb_size * 9.765625  * Math.pow(10, -4);
+};
+
+function throughputUnit(b_size){
+    var mb_size = b2mb(b_size);
+    if(b_size < 1024){
+	return b_size + " B/s"
+    }else if(mb_size < 1){
+	return (b_size * 0.00098).toFixed(1) +" KB/s";
+    }else if(mb_size < 1000){
+	return mb_size.toFixed(2) + " MB/s";
+    }else if(mb_size < 999999 ){
+	return mb2Gb(mb_size).toFixed(1) +" GB/s";
+    }else{
+	return mb2Tb(mb_size).toFixed(1) +" TB/s";
+    }
+};
+
+function responseTimeUnit(seconds){
+    var msecs = s2ms(seconds);
+    if(msecs >1000){
+    	return msecs.toFixed(0) +" ms";
+    }else if(msecs > 10){
+	return msecs.toFixed(1) +" ms";
+    }else{
+	return msecs.toFixed(3) +" ms";
+    }
+};
+function s2ms(seconds){
+    return seconds * 1000;
+}

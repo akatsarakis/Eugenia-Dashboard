@@ -1,14 +1,14 @@
 ﻿/*** Capacity Chart in Dashboard page ***/
-var info;
+var chart;
 $(document).ready(function() {
     var highchartsOptions = Highcharts.setOptions(Highcharts.theme);
-    info = new Highcharts.Chart({
+    chart = new Highcharts.Chart({
 	chart: {
 	 renderTo: 'CapacityWidget',
 	 margin: [0, 0, 20, 0],
 	 backgroundColor: null,
 	 plotBackgroundColor: 'none',
-	 height: 305,
+	 height: 300,
 	 width: 500,
 	},
 	 credits: {
@@ -35,16 +35,16 @@ $(document).ready(function() {
 	 },
 	 title: {
 	     text: capacityUnit(0),
-	    y: 140,
+	    y: 130,
 	    x: 0,
 	    style: {
-		font: 'normal 30px Verdana, sans-serif',
+		font: 'normal 28px Verdana, sans-serif',
             }
 	 },
 	 
 	 subtitle: {
             text: 'Total',
-	    y: 160,
+	    y: 150,
 	    x: 0,
 	    style: {
 		font: 'normal 14px Verdana, sans-serif',
@@ -80,7 +80,7 @@ $(document).ready(function() {
 		 formatter: function() {
 		     return Math.round(this.percentage*100)/100 + ' %';
 		 },
-		 distance: -18,
+		 distance: -28,
 		 color:'white'
 	     }
 	 }],
@@ -344,12 +344,14 @@ Highcharts.theme = {
 	if(window.capacity == undefined){return ;}
 	var used =  Math.round(window.capacity.used/(window.capacity.physical/100));
 	var replicas = Math.round(window.capacity.replicas_space/(window.capacity.physical/100));
-	var data = [ { name: 'Data', y: used - replicas, color: '#b2c831' },
-	    { name: 'Replicas', y: replicas, color: '#2E8AE6' },{ name: 'Free', y: 100 - used, color: '#3d3d3d' } ] ;
-	info.setTitle({ text: capacityUnit(window.capacity.physical) });
-
-	window.info.series[0].setData(data,true);
-	// window.info.series[0].setTitle(title,
+	var data = [ { name: 'Data ' + capacityUnit(window.capacity.used - window.capacity.replicas_space ), y: used - replicas, color: '#b2c831' },
+	    { name: 'Replicas ' + capacityUnit(window.capacity.replicas_space), y: replicas, color: '#2E8AE6' },
+	    { name: 'Free ' + capacityUnit(window.capacity.free), y: 100 - used, color: '#3d3d3d' } ] ;
+	
+	chart.setTitle({ text: capacityUnit(window.capacity.physical) });
+	
+	window.chart.series[0].setData(data,true);
+	// window.chart.series[0].setTitle(title,
     }
 
     setInterval(chart, 2000);

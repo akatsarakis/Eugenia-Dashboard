@@ -64,9 +64,26 @@ body .performanceTable {
 
 table.performanceTable tr.total {
     	font-size: 120%;
-	border-bottom: none; 
+	 
 }
-table.performanceTable tr.total th{ font-size: 100%; }
+
+table.performanceTable tr.total td {
+    	border-top: 3px solid #b2c831;
+	border-bottom: 3px solid #b2c831;
+
+}
+table.performanceTable tr.total th{
+    font-size: 100%; 
+    border-right: 3px solid #b2c831;
+}
+
+table.performanceTable tr.total td:last-of-type {
+    font-size: 100%; 
+    border-left: 3px solid #b2c831;
+    border-top: 2px solid #6D6B6B;
+    border-bottom: 2px solid #6D6B6B;
+}
+
 table.performanceTable  thead tr  {
 	background: #3d3d3d;
 	height: 30px; 

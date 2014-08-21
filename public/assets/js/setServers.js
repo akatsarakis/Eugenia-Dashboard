@@ -6,7 +6,6 @@ function setServers(){
 	document.getElementById("Servers").innerHTML = "<p>" +
 	    	"Servers:  " + window.servers.servers + "<br>"+
 		"Storage Servers :  " + window.servers.storage_servers + "*<br>"+
-		"Thin Servers :  "+ window.servers.thin_servers +"*<br>" +
 		"CPU util :  "+ window.servers.CPU_util +"%  *<br>" +
 		"Memory util :  "+ window.servers.memory_util +"%  *<br>" + "</p>";
 }

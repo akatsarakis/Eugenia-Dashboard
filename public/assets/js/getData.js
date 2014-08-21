@@ -27,8 +27,12 @@ function getJson(){
     });
 
 
-    $.getJSON('assets/data/Performance.json', function(data) {         
-	performance = data;
+    $.getJSON('assets/data/ApplicationPerformance.json', function(data) {         
+	applicationPerformance = data;
+    });
+
+    $.getJSON('assets/data/DevicesPerformance.json', function(data) {         
+	devicesPerformance = data;
     });
 
     $.getJSON('assets/data/Policies.json', function(data) {         

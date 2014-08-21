@@ -1,0 +1,1 @@
+{"read":{"throughput":0,"IOPS":23545,"average_request_size":"4.0 KB","avg_response_time":0.00004247186239116585},"write":{"throughput":0,"IOPS":43540,"average_request_size":0,"avg_response_time":0.00002296738631143776},"reconstruction":0,"migration":0}

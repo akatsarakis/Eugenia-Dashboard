@@ -96,7 +96,6 @@ function readData(data){
 		if(device.active != 0){
 		    state.capacity += Number(sort.CAPACITY['_']);
 		}
-		state.provisioned += Number(sort.CAPACITY['_']);
 	    }
 	    for(var j = 0; j<nodes.NODE[i].NICS.NIC.length; j++){
 		var sort = nodes.NODE[i].NICS.NIC[j];
@@ -120,6 +119,7 @@ function readData(data){
 			state.activeTargets++;
 		    }
 		    volume.addTarget(target);
+		    state.provisioned += Number(sort.TARGETS.TARGET.BLOCK_DEVICE.PROVISION['_']);
 
 		}else{
 		    for(var j = 0; j<sort.TARGETS.TARGET.length; j++){
@@ -129,6 +129,7 @@ function readData(data){
 			    state.activeTargets++;
 			}
 			volume.addTarget(target);
+			state.provisioned += Number(sort.TARGETS.TARGET[j].BLOCK_DEVICE.PROVISION['_']);
 		    }
 		}
 
@@ -151,6 +152,7 @@ function readData(data){
 			    state.activeTargets++;
 			}
 			volume.addTarget(target);
+			state.provisioned += Number(sort.TARGETS.TARGET.BLOCK_DEVICE.PROVISION['_']);
 
 		    }else{
 
@@ -161,6 +163,7 @@ function readData(data){
 				state.activeTargets++;
 			    }
 			    volume.addTarget(target);
+			    state.provisioned += Number(sort.TARGETS.TARGET[j].BLOCK_DEVICE.PROVISION['_']);
 			}
 		    }
 		}

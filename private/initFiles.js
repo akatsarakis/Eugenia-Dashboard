@@ -3,7 +3,8 @@ var fs = require('fs'),
     initNoty = require('./initNoty.js');
     //
     initCapacity = require('./index/initCapacity.js');
-    initPerformance = require('./index/initPerformance.js');
+    initApplicationPerformance = require('./index/initApplicationPerformance.js');
+    initDevicesPerformance = require('./index/initDevicesPerformance.js');
     initServers = require('./index/initServers.js');
     initDevices = require('./index/initDevices.js');
     initVolumes = require('./index/initVolumes.js');
@@ -27,7 +28,8 @@ function initFiles( state , preState ){
     initTargetsTable( state );
     initNoty( state , preState );
     initCapacity( state);
-    initPerformance(state);
+    initApplicationPerformance(state,preState);
+    initDevicesPerformance(state,preState);
     initServers(state);
     initDevices(state);
     initVolumes(state);

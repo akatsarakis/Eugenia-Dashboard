@@ -12,7 +12,6 @@ exports.Statistics = Statistics;
 //eugenia's volume object
 function Volume(name,volume_guid,capacity,replicas,policy_id,active,core_id,max_target_core_index)
 {
-    //static this.noVolumes = (noVolumes == undefined) ? 0 : (noVolumes+1);
     this.name = name;
     this.targets = [];
     this.volume_guid = volume_guid;
@@ -23,6 +22,7 @@ function Volume(name,volume_guid,capacity,replicas,policy_id,active,core_id,max_
     this.core_id = core_id;
     this.max_target_core_index = max_target_core_index;
     //central log level maybe
+
     this.addTarget = function(target){ this.targets.push(target); this.noTargets++; };
     this.noTargets = 0;
 
