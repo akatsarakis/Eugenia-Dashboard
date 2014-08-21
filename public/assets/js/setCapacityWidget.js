@@ -340,7 +340,7 @@ Highcharts.theme = {
     };
 
 
-    function chart(){
+    function chartUpdate(){
 	if(window.capacity == undefined){return ;}
 	var used =  Math.round(window.capacity.used/(window.capacity.physical/100));
 	var replicas = Math.round(window.capacity.replicas_space/(window.capacity.physical/100));
@@ -354,7 +354,7 @@ Highcharts.theme = {
 	// window.chart.series[0].setTitle(title,
     }
 
-    setInterval(chart, 2000);
+    setInterval(chartUpdate, 2000);
 
 // transform mb to gb
 function mb2Tb(mb_size){
