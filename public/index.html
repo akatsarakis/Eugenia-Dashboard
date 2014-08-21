@@ -161,14 +161,38 @@ $(document).ready(function () {
 	    </div><!-- /dash-unit -->
 	</div><!-- /span3 -->
 
-
-    
-    </div><!---end of first row--->
+    </div><!---end of first row-->
 
     <!-- second row of blocks/charts -->         
     <div class="row">  
+	<div class="col-sm-6 col-lg-6">
+	    <!--volumes  -->
+	    <div class="dash-unit dash-unit-smaller" id="clickVolumes">
+		<a href="volumes.html"><dtitle>volumes</dtitle></a>
+		<div class="framemail">
+		    <div class="text" id = "VolumesWidget">
 
-	<div class="col-sm-3 col-lg-3">
+		    </div>	
+		</div>
+	    </div><!-- /dash-unit -->
+	</div><!-- /span3 -->	
+
+	<div class="col-sm-6 col-lg-6">
+	    <!-- devices -->
+	    <div class="dash-unit dash-unit-smaller">
+		<a href="devices.html"><dtitle>devices</dtitle></a>
+		<div class="framemail">
+		    <div class="text" id = "DevicesWidget">
+
+		    </div>
+		</div>
+	    </div><!-- /dash-unit -->
+	</div><!-- /span3 -->	
+    </div><!---end of second row-->
+
+    <!-- third row of blocks/charts -->         
+    <div class="row">
+	<div class="col-sm-6 col-lg-6">
 	    <!-- server -->
 	    <div class="dash-unit dash-unit-smaller">
 		<a href="servers.html"><dtitle>servers</dtitle></a>
@@ -184,41 +208,7 @@ $(document).ready(function () {
 	    </div><!-- /dash-unit -->
 	</div><!-- /span3 -->
 
-
-
-	<div class="col-sm-3 col-lg-3">
-	    <!--volumes  -->
-	    <div class="dash-unit dash-unit-smaller" id="clickVolumes">
-		<a href="volumes.html"><dtitle>volumes</dtitle></a>
-		<hr>
-		<!--<div class="info-user">
-		    <span aria-hidden="true" class="li_display fs2"></span>
-		</div>-->
-		<div class="framemail">
-		    <div class="text" id = "Volumes">
-
-		    </div>	
-		</div>
-	    </div><!-- /dash-unit -->
-	</div><!-- /span3 -->	 
-
-	<div class="col-sm-3 col-lg-3">
-	    <!-- devices -->
-	    <div class="dash-unit dash-unit-smaller">
-		<a href="devices.html"><dtitle>devices</dtitle></a>
-		<hr>
-		<!--<div class="info-user">
-		    <span aria-hidden="true" class="li_display fs2"></span>
-		</div>-->
-		<div class="framemail">
-		    <div class="text" id = "Devices">
-
-		    </div>
-		</div>
-	    </div><!-- /dash-unit -->
-	</div><!-- /span3 -->	
-
-	<div class="col-sm-3 col-lg-3">
+	<div class="col-sm-6 col-lg-6">
 	    <!-- policies block -->
 	    <div class="dash-unit dash-unit-smaller">
 		<dtitle>policies</dtitle>
@@ -232,14 +222,8 @@ $(document).ready(function () {
 		    </div>
 		</div>
 	    </div>
-
 	</div><!-- /span3 -->
-
-
-    </div><!-- end of second row -->
-
-
-
+    </div><!-- end of third row -->
 
 </div> <!-- /container -->
 
@@ -267,14 +251,14 @@ src="assets/js/dash-charts.js"></script>-->
 
 <script type="text/javascript"src="assets/js/getData.js"></script>
 <script type="text/javascript" src="assets/js/setCapacity.js"></script>
-<script type="text/javascript" src="assets/js/setDevices.js"></script>
+<script type="text/javascript" src="assets/js/setDevicesWidget.js"></script>
 <script type="text/javascript"src="assets/js/setNoty.js"></script>
 <script type="text/javascript" src="assets/js/setApplicationPerformance.js"></script>
 <script type="text/javascript" src="assets/js/setDevicesPerformance.js"></script>
 
 <script type="text/javascript" src="assets/js/setPolicies.js"></script>
 <script type="text/javascript" src="assets/js/setServers.js"></script>
-<script type="text/javascript" src="assets/js/setVolumes.js"></script>
+<script type="text/javascript" src="assets/js/setVolumesWidget.js"></script>
 <script type="text/javascript" src="assets/js/setCapacityWidget.js"></script>
 
 
