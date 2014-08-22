@@ -6,16 +6,16 @@ function setApplicationPerformance(){
 		      "<td>"+Number(window.applicationPerformance.read.IOPS+window.applicationPerformance.write.IOPS).toLocaleString()+
 	    	      "</td><td>" + throughputUnit(Number(window.applicationPerformance.read.throughput+ window.applicationPerformance.write.throughput))+"</td> "+
 	              "<td>" +responseTimeUnit( Number(window.applicationPerformance.read.avg_response_time + window.applicationPerformance.write.avg_response_time))+
-		      "</td><td>"+  window.applicationPerformance.read.average_request_size /*Number(window.applicationPerformance.read.average_request_size
-		      + window.applicationPerformance.write.average_request_size)*/ +"</td></tr>"+
+		      "</td><td>"+  ioSizeUnit(Number(window.applicationPerformance.read.average_request_size)
+		      + Number(window.applicationPerformance.write.average_request_size))+"</td></tr>"+
 	    	      "<tr><th>Read</th><td>"+window.applicationPerformance.read.IOPS.toLocaleString()+
 	    	      "</td><td>" + throughputUnit( window.applicationPerformance.read.throughput) + "</td>" +
 	              "<td>" + responseTimeUnit(window.applicationPerformance.read.avg_response_time)  +
-		      "</td><td>"+window.applicationPerformance.read.average_request_size +"</td></tr>"+
+		      "</td><td>"+ioSizeUnit(Number(window.applicationPerformance.read.average_request_size)) +"</td></tr>"+
 		      "<tr><th>Write</th><td>"+window.applicationPerformance.write.IOPS.toLocaleString()+
 	    	      "</td><td>" + throughputUnit( window.applicationPerformance.write.throughput) + "</td>" +
 	              "<td>" + responseTimeUnit(window.applicationPerformance.write.avg_response_time) + "</td><td>"+
-		      window.applicationPerformance.write.average_request_size +"</td></tr>";
+		      ioSizeUnit(Number(window.applicationPerformance.write.average_request_size)) +"</td></tr>";
  
 };
 setInterval( setApplicationPerformance, 2000 );
@@ -34,7 +34,9 @@ function mb2Gb(mb_size){
 
 function throughputUnit(b_size){
     var mb_size = b2mb(b_size);
-    if(b_size < 1024){
+    if(b_size < 0){
+	return "0 B/s";
+    }else if(b_size < 1024){
 	return b_size + " B/s"
     }else if(mb_size < 1){
 	return (b_size * 0.00098).toFixed(1) +" KB/s";
@@ -60,3 +62,21 @@ function responseTimeUnit(seconds){
 function s2ms(seconds){
     return seconds * 1000;
 }
+
+function ioSizeUnit(b_size){
+	var mb_size = b2mb(b_size);
+    if(b_size < 0){
+	return "0 B";
+    }else if(b_size < 1024){
+	return b_size.toFixed(1) + " B";
+    }else if(mb_size < 1){
+	return (b_size * 0.00098).toFixed(1) +" KB";
+    }else if(mb_size < 1000){
+	return mb_size.toFixed(2) + " MB";
+    }else if(mb_size < 999999 ){
+	return mb2Gb(mb_size).toFixed(1) +" GB";
+    }else{
+	return mb2Tb(mb_size).toFixed(1) +" TB";
+    }
+
+};

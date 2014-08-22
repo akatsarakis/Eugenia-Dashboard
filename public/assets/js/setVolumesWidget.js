@@ -1,5 +1,6 @@
+var volumesChart;
 $(function () {
-    var options1 = {
+    var volumesChartOptions = {
 	chart: {
 	    renderTo:VolumesWidget,
 type: 'column',
@@ -63,10 +64,10 @@ yAxis: {
     },
     series: [{
 	name: 'Healthy',
-	data: [3, 3, 0]
+	data: [0, 0, 0]
     }, {
 	name: 'Degraded',
-	data: [3, 0, 3]
+	data: [0, 0, 0]
     }]
 }
 
@@ -82,7 +83,7 @@ Highcharts.createElement('link', {
     type: 'text/css'
 }, null, document.getElementsByTagName('head')[0]);
 
-var theme1 = {
+var volumesChartTheme = {
     colors: ["#90ee7e", "#f45b5b", "#f45b5b", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
     "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
     chart: {
@@ -275,6 +276,20 @@ var theme1 = {
 };
 
 // Apply the theme
-var chart1 = new Highcharts.Chart(Highcharts.merge(options1, theme1));
+volumesChart = new Highcharts.Chart(Highcharts.merge(volumesChartOptions, volumesChartTheme));
 });
 
+//update the chart with the right values from xml
+function volumesWidgetUpdate(){
+    if(window.volumes == undefined){return ;}
+    window.volumesChart.series[0].data[0].update((volumes.volumes - volumes.offline.degraded) -
+	    			           volumes.online.degraded);
+    window.volumesChart.series[1].data[0].update(volumes.offline.degraded + 
+	    				   volumes.online.degraded);
+    window.volumesChart.series[0].data[1].update(volumes.online.healthy);
+    window.volumesChart.series[1].data[1].update(volumes.online.degraded);
+    window.volumesChart.series[0].data[2].update(volumes.offline.healthy);
+    window.volumesChart.series[1].data[2].update(volumes.offline.degraded);
+}
+
+setInterval(volumesWidgetUpdate, 2000);

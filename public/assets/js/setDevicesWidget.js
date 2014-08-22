@@ -1,6 +1,8 @@
+var devicesChart;
 $(function () {
-    $('#DevicesWidget').highcharts({
+    var devicesChartOpions = {
         chart: {
+	    renderTo:DevicesWidget,
             type: 'column',
     	    backgroundColor: null,
 	    plotBackgroundColor: 'none',
@@ -61,13 +63,12 @@ $(function () {
         },
         series: [{
             name: 'Flash',
-            data: [5, 3, 2]
+            data: [0, 0, 0]
         }, {
             name: 'Disks',
-            data: [2, 2, 1]
+            data: [0, 0, 0]
         }]
-    });
-});
+    }
 
 /**
  * Dark theme for Highcharts JS
@@ -81,17 +82,10 @@ Highcharts.createElement('link', {
    type: 'text/css'
 }, null, document.getElementsByTagName('head')[0]);
 
-Highcharts.theme = {
+devicesChartTheme = {
    colors: ["#2b908f", "#90ee7e", "#f45b5b", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee",
       "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
    chart: {
-      backgroundColor: {
-         linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
-         stops: [
-            [0, '#2a2a2b'],
-            [1, '#3e3e40']
-         ]
-      },
       style: {
          fontFamily: "'Unica One', sans-serif"
       },
@@ -281,6 +275,18 @@ Highcharts.theme = {
 };
 
 // Apply the theme
-Highcharts.setOptions(Highcharts.theme);
+devicesChart = new Highcharts.Chart(Highcharts.merge(devicesChartOpions, devicesChartTheme));
+});
 
+//update the chart with the right values from xml
+function volumesWidgetUpdate(){
+    if(window.volumes == undefined){return ;}
+    window.devicesChart.series[0].data[0].update(devices.devices-50);
+    window.devicesChart.series[1].data[0].update(8);
+    window.devicesChart.series[0].data[1].update(devices.assigned);
+    window.devicesChart.series[1].data[1].update(5);
+    window.devicesChart.series[0].data[2].update(devices.used);
+    window.devicesChart.series[1].data[2].update(3);
+}
 
+setInterval(volumesWidgetUpdate, 2000);

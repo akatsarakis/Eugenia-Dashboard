@@ -11,7 +11,7 @@ function initApplicationPerformance( state,preState ){
 
     applicationPerformance.read.throughput = 0;   
     applicationPerformance.read.IOPS = 0;  
-    applicationPerformance.read.average_request_size = '4.0 KB'; // <<UNINITIALIZED>>
+    applicationPerformance.read.average_request_size = 0; // <<UNINITIALIZED>>
     applicationPerformance.read.avg_response_time = 0; 	
 
 
@@ -37,13 +37,21 @@ function initApplicationPerformance( state,preState ){
 			applicationPerformance.read.throughput +=
 			    Number((target.statistics.ds_sectors_read - 
 				    preTarget.statistics.ds_sectors_read)*512/2);
-
+			
 		    }
 	    }
 	}
     }
-    applicationPerformance.write.avg_response_time = 1 / applicationPerformance.write.IOPS;
-    applicationPerformance.read.avg_response_time = 1 / applicationPerformance.read.IOPS;
+    if(applicationPerformance.write.throughput < 0){ applicationPerformance.write.throughput = 0; }
+    if(applicationPerformance.read.throughput < 0){ applicationPerformance.read.throughput = 0; }
+    if(applicationPerformance.write.IOPS > 0){
+        applicationPerformance.write.average_request_size = applicationPerformance.write.throughput / applicationPerformance.write.IOPS;
+        applicationPerformance.write.avg_response_time = 1 / applicationPerformance.write.IOPS;
+    }
+    if(applicationPerformance.read.IOPS > 0){
+        applicationPerformance.read.average_request_size = applicationPerformance.read.throughput / applicationPerformance.read.IOPS;
+        applicationPerformance.read.avg_response_time = 1 / applicationPerformance.read.IOPS;
+    }
     var str = JSON.stringify(applicationPerformance);
     fs.writeFile('public/assets/data/ApplicationPerformance.json',str, function (err) {
 	if (err) throw err;
