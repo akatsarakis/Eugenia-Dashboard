@@ -14,19 +14,6 @@ $(function () {
 
         title: null,
 
-        /*pane: {
-            center: ['50%', '50%'],
-            size: '100%',
-            startAngle: -180,
-            endAngle: 0,
-            background: {
-                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
-                innerRadius: '60%',
-                outerRadius: '100%',
-                shape: 'arc'
-            }
-        },*/
-
         tooltip: {
             enabled: false
         },

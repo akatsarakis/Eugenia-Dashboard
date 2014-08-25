@@ -8,7 +8,7 @@ $(document).ready(function() {
 	 margin: [0, 0, 20, 0],
 	 backgroundColor: null,
 	 plotBackgroundColor: 'none',
-	 height: 300,
+	 height: 305,
 	 width: 500,
 	},
 	 credits: {
