@@ -3,11 +3,12 @@ $(function () {
     var volumesChartOptions = {
 	chart: {
 	    renderTo:VolumesWidget,
-type: 'column',
-backgroundColor: null,
-plotBackgroundColor: 'none',
-height: 180,
-width: 340
+            type: 'column',
+     	    backgroundColor: null,
+	    plotBackgroundColor: 'none',
+    	    spacingLeft:60,
+    	    spacingRight:60,
+	    height: 180
 	},
 credits: {
     enabled: false
