@@ -137,6 +137,13 @@ table.performanceTable td {
 
 /***********BLOCKS & WRAPS***********/
 
+/*-- Utilization Widgets ---*/
+.util {
+    width: 45%;
+    height: 80%;
+    padding-left:5%;
+    float: left;
+}
 /*--- Dash Unit / Used in Dashboard page ---*/
 .dash-unit {		
 	margin-bottom: 30px;

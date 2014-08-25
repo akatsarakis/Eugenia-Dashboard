@@ -9,7 +9,7 @@ $(function () {
     	    backgroundColor: null,
 	    plotBackgroundColor: 'none',
     	    height:220,
-            width: 160
+            width: 170
 	},
 
         title: null,
@@ -58,25 +58,31 @@ $(function () {
                     useHTML: true
                 }
             }
+        },
+
+	credits: {
+            enabled: false
         }
     };
 
     // The speed gauge
-    $('#ServersWidget').highcharts(Highcharts.merge(gaugeOptions, {
+    $('#ServersWidgetCPU').highcharts(Highcharts.merge(gaugeOptions, {
         yAxis: {
             min: 0,
             max: 100,
             title: {
-		x: 70,
+		enabled: false,
+		x: 0,
 		y:20 ,
                 text: 'CPU'
-            }
+            },
+	    
         },
 	pane: {
-            center: ['50%', '40%'],
+            center: ['50%', '50%'],
             size: '100%',
-            startAngle: 0,
-            endAngle: 180,
+            startAngle: -90,
+            endAngle: 90,
             background: {
                 backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
                 innerRadius: '60%',
@@ -85,18 +91,14 @@ $(function () {
             }
         },
 
-        credits: {
-            enabled: false
-        },
-
         series: [{
             name: 'CPU Utilazation',
             data: [80],
             dataLabels: {
-		enabled:false,
+		y: -10,
                 format: '<div style="text-align:center"><span style="font-size:25px;color:' +
-                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{}</span><br/>' +
-                       '<span style="font-size:12px;color:silver">km/h</span></div>'
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'silver') + '">{y}%</span><br/>' +
+                       '<span style="font-size:12px;color:silver">CPU Utilazation</span></div>'
             },
             tooltip: {
                 valueSuffix: ' %'
@@ -105,20 +107,23 @@ $(function () {
 
     }));
 
-    // The RPM gauge
-    $('#ServersWdget').highcharts(Highcharts.merge(gaugeOptions, {
+    // The servers widget Memory utilazation gauge
+    $('#ServersWidgetMemory').highcharts(Highcharts.merge(gaugeOptions, {
         yAxis: {
             min: 0,
             max: 100,
             title: {
-                text: 'RPM'
+		enabled: false,
+		x: 0,
+		y:20 ,
+                text: 'Memory'
             }
-        },
+	},
 	pane: {
             center: ['50%', '50%'],
             size: '100%',
-            startAngle: 0,
-            endAngle: -90,
+            startAngle: -90,
+            endAngle: 90,
             background: {
                 backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
                 innerRadius: '60%',
@@ -131,10 +136,10 @@ $(function () {
             name: 'Memory',
             data: [30],
             dataLabels: {
-		enabled:false,
+                y: -10,
                 format: '<div style="text-align:center"><span style="font-size:25px;color:' +
-                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +
-                       '<span style="font-size:22px;color:silver">* 1000 / min</span></div>'
+                    ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'silver') + '">{y}%</span><br/>' +
+                       '<span style="font-size:12px;color:silver">Memory Utilazation</span></div>'
             },
             tooltip: {
                 valueSuffix: ' %'
@@ -145,8 +150,8 @@ $(function () {
 
     // Bring life to the dials
     setInterval(function () {
-        // Speed
-        var chart = $('#ServersWidget').highcharts(),
+        // CPU widget
+        var chart = $('#ServersWidgetCPU').highcharts(),
             point,
             newVal,
             inc;
@@ -163,14 +168,14 @@ $(function () {
             point.update(newVal);
         }
 
-        // RPM
-        chart = $('#container-rpm').highcharts();
+        // Memory widget
+        chart = $('#ServersWidgetMemory').highcharts();
         if (chart) {
             point = chart.series[0].points[0];
-            inc = Math.random() - 0.5;
+            inc = Math.round((Math.random() - 0.5) * 100);
             newVal = point.y + inc;
 
-            if (newVal < 0 || newVal > 5) {
+            if (newVal < 0 || newVal > 100) {
                 newVal = point.y - inc;
             }
 
