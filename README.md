@@ -1,6 +1,6 @@
 #Eugenia Dashboard
 
-Welcome to the Eugenia Dashboard 2.0.5 release! 
+Welcome to the Eugenia Dashboard 2.1.0 release! 
 
 
 Usefull Info
