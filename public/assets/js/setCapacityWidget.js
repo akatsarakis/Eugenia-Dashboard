@@ -9,7 +9,6 @@ $(document).ready(function() {
 	 backgroundColor: null,
 	 plotBackgroundColor: 'none',
 	 height: 305,
-	 width: 500,
 	},
 	 credits: {
 	     enabled: false

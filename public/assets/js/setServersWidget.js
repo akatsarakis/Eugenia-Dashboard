@@ -85,7 +85,7 @@ $(function () {
 		y: -10,
                 format: '<div style="text-align:center"><span style="font-size:25px;color:' +
                     ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'silver') + '">{y}%</span><br/>' +
-                       '<span style="font-size:12px;color:silver">CPU Utilazation</span></div>'
+                       '<span style="font-size:12px;color:silver">CPU Utilization</span></div>'
             },
             tooltip: {
                 valueSuffix: ' %'
@@ -126,7 +126,7 @@ $(function () {
                 y: -10,
                 format: '<div style="text-align:center"><span style="font-size:25px;color:' +
                     ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'silver') + '">{y}%</span><br/>' +
-                       '<span style="font-size:12px;color:silver">Memory Utilazation</span></div>'
+                       '<span style="font-size:12px;color:silver">Memory Utilization</span></div>'
             },
             tooltip: {
                 valueSuffix: ' %'

@@ -10,7 +10,7 @@ function initDevicesPerformance( state ){
     devicesPerformance.migration = 0; // <<UNINITIALIZED>>
 
     devicesPerformance.read.throughput = 0;   // <<UNINITIALIZED>>
-    devicesPerformance.read.IOPS = 923.773;  // <<UNINITIALIZED>>
+    devicesPerformance.read.IOPS = 923773;  // <<UNINITIALIZED>>
     devicesPerformance.read.average_request_size = 0; // <<UNINITIALIZED>>
     devicesPerformance.read.avg_response_time = 0; 	// <<UNINITIALIZED>>
 

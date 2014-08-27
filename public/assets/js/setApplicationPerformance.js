@@ -37,7 +37,7 @@ function throughputUnit(b_size){
     if(b_size < 0){
 	return "0 B/s";
     }else if(b_size < 1024){
-	return b_size + " B/s"
+	return b_size.toFixed(1) + " B/s"
     }else if(mb_size < 1){
 	return (b_size * 0.00098).toFixed(1) +" KB/s";
     }else if(mb_size < 1000){

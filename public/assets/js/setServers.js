@@ -3,7 +3,8 @@
 **/
 function setServers(){	
      	if(window.servers == undefined){return;}
-	document.getElementById("ServersOnline").innerHTML = window.servers.servers+ "  Servers Online";
+	document.getElementById("ServersOnline").innerHTML = "Total: " + window.servers.servers +
+	    					"<br /> Assigned: " + window.servers.assigned;
 }
 
 //updates every 1 second.

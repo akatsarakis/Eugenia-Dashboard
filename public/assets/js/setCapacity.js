@@ -3,8 +3,8 @@ function setCapacity(){
     if(window.capacity == undefined){return;}
     document.getElementById('capacityTab').innerHTML='';
 
-    document.getElementById('capacityTab').innerHTML='&nbsp;&nbsp;&nbsp;Physical: '+capacityUnit(window.capacity.physical) +"  "+
-						     '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provisioned: '+capacityUnit(window.capacity.provisioned) + 
+    document.getElementById('capacityTab').innerHTML='&nbsp;&nbsp;Physical: '+capacityUnit(window.capacity.physical) +"  "+
+						     '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provisioned: '+capacityUnit(window.capacity.provisioned) + 
 						     '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Metadata: ' +capacityUnit(window.capacity.metadata)  ;
 
 }
