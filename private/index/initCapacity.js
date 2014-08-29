@@ -29,7 +29,6 @@ function initCapacity( state ){
 	    capacity.used += Number(state.volumes[i].targets[j].statistics.eug_target_used);
 	}
 	capacity.replicas_space += volumeUsedSpace - (volumeUsedSpace *(1/state.volumes[i].replicas));
-	console.log(capacity.used);
     }
     capacity.free = capacity.physical - capacity.used;
 

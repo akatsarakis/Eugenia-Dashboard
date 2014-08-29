@@ -90,7 +90,7 @@ function Node(domain_guid,host_guid,operating_system,version,release,active,memo
 };
 
 // eugenia's block_device object
-function Block_device(name,capacity,latency,iops_r,active)
+function Block_device(name,capacity,latency,iops_r,active,media)
 {
     //static this.noBlockDevices = (noBlockDevices == undefined) ? 0 : (noBlockDevices+1);
     this.name = name;
@@ -98,6 +98,7 @@ function Block_device(name,capacity,latency,iops_r,active)
     this.latency = latency;
     this.iops_r = iops_r;
     this.active = active;
+    this.media = media;
 };
 
 // eugenia's Nic object

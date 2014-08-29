@@ -90,7 +90,7 @@ function readData(data){
 		var sort = nodes.NODE[i].BLOCK_DEVICES.BLOCK_DEVICE[j];
 		device = new Block_device(sort.BD_NAME['_'],
 			sort.CAPACITY['_'],sort.LATENCY['_'],
-			sort.IOPS_r['_'],sort.active['_']);
+			sort.IOPS_r['_'],sort.active['_'],sort.MEDIA);
 		node.addBlockDevice(device);
 
 		if(device.active != 0){
@@ -201,7 +201,7 @@ function createTarget(target,statistics){
 	    target.BLOCK_DEVICE.BD_NAME,
 	    statistics,
 	    target.PORT['_'],
-	    target.CORE_INDEX['_'],
+	    target.CORE_IP_INDEX['_'],
 	    target.ACTIVE['_']);
     return newTarget;
 };
@@ -228,12 +228,18 @@ function createVolume(volume){
 	    volume.POLICY_ID,
 	    volume.ACTIVE['_'],
 	    volume.CORE_ID['_'],
-	    volume.MAX_TARGET_CORE_INDEX['_']);
+	    volume.MAX_TARGET_CORE_IP_INDEX['_']);
     return newVolume;
 };
 
 //creates and returns a Policy object
 function creatPolicy(policy){
+    if(policy.POLICY_ID == 'NONE'){ 
+    	var newPolicy = new Policy(policy.POLICY_ID,"",
+			    "","","","","");
+	return newPolicy;
+    }
+
     var newPolicy = new Policy(policy.POLICY_ID['_'],policy.THINLY_PROVISIONED['_'],
 			    policy.SLA_LATENCY['_'],policy.SLA_LATENCY_MAX_DIVERGENCE['_'],
 			    policy.MIN_TARGET_FREE_SPACE_PERCENTAGE,

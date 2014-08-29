@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EUGENIA_CONFIGURATION_FILE version="1.0">
   <CLEAN_SHUTDOWN>false</CLEAN_SHUTDOWN>
-  <LAST_SYSTEM_START>2014-8-28 17:16:2
+  <LAST_SYSTEM_START>2014-7-29 13:9:7
 </LAST_SYSTEM_START>
   <default_central_log_level>WARNING</default_central_log_level>
   <configuration_file_replicas/>
   <NODES>	<NODE>
 			<DOMAIN_GUID>NO_DOMAIN</DOMAIN_GUID>
-			<HOST_GUID type="string">ray1</HOST_GUID>
+			<HOST_GUID type="string">ubuntu3</HOST_GUID>
 			<OS>
 				<Operating_System type="string">Linux</Operating_System>
-			<Version type="string">#128-Ubuntu SMP Tue Jul 15 08:41:58 UTC 2014</Version>
-			<Release type="string">2.6.32-64-server</Release>
+			<Version type="string">#102-Ubuntu SMP Wed Jan 2 22:53:00 UTC 2013</Version>
+			<Release type="string">2.6.32-45-server</Release>
 			</OS>
 			<active type="bool">true</active>
 			<NICS>
@@ -22,85 +22,35 @@
 					<active type="bool">false</active>
 				</NIC>
 				<NIC>
-					<NIC_GUID>0:25:90:e3:51:bd</NIC_GUID>
-					<IPv4>192.168.1.171</IPv4>
+					<NIC_GUID>8:0:27:48:6:9</NIC_GUID>
+					<IPv4>192.168.56.103</IPv4>
 					<bandwidth unit="Mb">0</bandwidth>
 					<active type="bool">false</active>
 				</NIC>
 				<NIC>
-					<NIC_GUID>0:60:dd:47:d:c9</NIC_GUID>
-					<IPv4>10.10.10.1</IPv4>
+					<NIC_GUID>8:0:27:65:e8:99</NIC_GUID>
+					<IPv4>10.0.3.15</IPv4>
 					<bandwidth unit="Mb">0</bandwidth>
 					<active type="bool">false</active>
 				</NIC>
 			</NICS>
 			<BLOCK_DEVICES>
 				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sdc</BD_NAME>
-					<CAPACITY unit="MB">30517</CAPACITY>
-					<LATENCY unit="usec">185</LATENCY>
-					<IOPS_r unit="4K">172972</IOPS_r>
+					<BD_NAME type="string">/dev/sda1</BD_NAME>
+					<CAPACITY unit="MB">10238</CAPACITY>
+					<LATENCY unit="usec">3477</LATENCY>
+					<IOPS_r unit="4K">9203</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sdb</BD_NAME>
-					<CAPACITY unit="MB">30517</CAPACITY>
-					<LATENCY unit="usec">183</LATENCY>
-					<IOPS_r unit="4K">174863</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>DISK</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">1</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda6</BD_NAME>
-					<CAPACITY unit="MB">2967</CAPACITY>
-					<LATENCY unit="usec">6130</LATENCY>
-					<IOPS_r unit="4K">5220</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>DISK</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda5</BD_NAME>
-					<CAPACITY unit="MB">68786</CAPACITY>
-					<LATENCY unit="usec">6076</LATENCY>
-					<IOPS_r unit="4K">5266</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda2</BD_NAME>
-					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda1</BD_NAME>
-					<CAPACITY unit="MB">80871</CAPACITY>
-					<LATENCY unit="usec">5732</LATENCY>
-					<IOPS_r unit="4K">5582</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/sda</BD_NAME>
-					<CAPACITY unit="MB">152627</CAPACITY>
-					<LATENCY unit="usec">6467</LATENCY>
-					<IOPS_r unit="4K">4948</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<CAPACITY unit="MB">10240</CAPACITY>
+					<LATENCY unit="usec">6402</LATENCY>
+					<IOPS_r unit="4K">4998</IOPS_r>
+					<seq_r_1M unit="MB/s">124</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -110,7 +60,7 @@
 					<CAPACITY unit="MB">0</CAPACITY>
 					<LATENCY unit="usec">1</LATENCY>
 					<IOPS_r unit="4K">32000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<seq_r_1M unit="MB/s">1697054728</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -120,7 +70,7 @@
 					<CAPACITY unit="MB">0</CAPACITY>
 					<LATENCY unit="usec">1</LATENCY>
 					<IOPS_r unit="4K">32000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<seq_r_1M unit="MB/s">880</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -158,38 +108,38 @@
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop2</BD_NAME>
 					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop1</BD_NAME>
 					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop0</BD_NAME>
-					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<CAPACITY unit="MB">512</CAPACITY>
+					<LATENCY unit="usec">16099</LATENCY>
+					<IOPS_r unit="4K">1987</IOPS_r>
+					<seq_r_1M unit="MB/s">10</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
+					<active type="uint">1</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram15</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">8</LATENCY>
+					<IOPS_r unit="4K">4000000</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -197,9 +147,9 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram14</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">4</LATENCY>
+					<IOPS_r unit="4K">8000000</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -207,9 +157,9 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram13</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">5</LATENCY>
+					<IOPS_r unit="4K">6399999</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -217,9 +167,9 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram12</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">3</LATENCY>
+					<IOPS_r unit="4K">10666666</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -227,207 +177,157 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram11</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram10</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram9</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram8</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram7</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram6</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram5</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram4</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram3</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram2</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram1</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram0</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 			</BLOCK_DEVICES>
-		<MEMORY type="string">11954</MEMORY>
-			<CPUS type="string">16</CPUS>
+		<MEMORY type="string">3871</MEMORY>
+			<CPUS type="string">2</CPUS>
 			</NODE>
 		<NODE>
 			<DOMAIN_GUID>NO_DOMAIN</DOMAIN_GUID>
-			<HOST_GUID type="string">xray7</HOST_GUID>
+			<HOST_GUID type="string">ubuntu2</HOST_GUID>
 			<OS>
 				<Operating_System type="string">Linux</Operating_System>
-			<Version type="string">#128-Ubuntu SMP Tue Jul 15 08:41:58 UTC 2014</Version>
-			<Release type="string">2.6.32-64-server</Release>
+			<Version type="string">#102-Ubuntu SMP Wed Jan 2 22:53:00 UTC 2013</Version>
+			<Release type="string">2.6.32-45-server</Release>
 			</OS>
 			<active type="bool">true</active>
 			<NICS>
 				<NIC>
-					<NIC_GUID>0:25:90:e3:51:e2</NIC_GUID>
-					<IPv4>192.168.1.178</IPv4>
+					<NIC_GUID>8:0:27:94:ed:6</NIC_GUID>
+					<IPv4>192.168.56.102</IPv4>
 					<bandwidth unit="Mb">0</bandwidth>
 					<active type="bool">false</active>
 				</NIC>
 				<NIC>
-					<NIC_GUID>0:60:dd:47:d:d9</NIC_GUID>
-					<IPv4>10.10.10.7</IPv4>
+					<NIC_GUID>8:0:27:72:7:2d</NIC_GUID>
+					<IPv4>10.0.3.15</IPv4>
 					<bandwidth unit="Mb">0</bandwidth>
 					<active type="bool">false</active>
 				</NIC>
 			</NICS>
 			<BLOCK_DEVICES>
 				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sdc</BD_NAME>
-					<CAPACITY unit="MB">30517</CAPACITY>
-					<LATENCY unit="usec">227</LATENCY>
-					<IOPS_r unit="4K">140969</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sdb</BD_NAME>
-					<CAPACITY unit="MB">30517</CAPACITY>
-					<LATENCY unit="usec">215</LATENCY>
-					<IOPS_r unit="4K">148837</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">1</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda6</BD_NAME>
-					<CAPACITY unit="MB">9181</CAPACITY>
-					<LATENCY unit="usec">6691</LATENCY>
-					<IOPS_r unit="4K">4782</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda5</BD_NAME>
-					<CAPACITY unit="MB">216367</CAPACITY>
-					<LATENCY unit="usec">5804</LATENCY>
-					<IOPS_r unit="4K">5513</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda2</BD_NAME>
-					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">3</LATENCY>
-					<IOPS_r unit="4K">10666666</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/sda1</BD_NAME>
-					<CAPACITY unit="MB">251388</CAPACITY>
-					<LATENCY unit="usec">7764</LATENCY>
-					<IOPS_r unit="4K">4121</IOPS_r>
+					<CAPACITY unit="MB">10238</CAPACITY>
+					<LATENCY unit="usec">4292</LATENCY>
+					<IOPS_r unit="4K">7455</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -435,10 +335,10 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/sda</BD_NAME>
-					<CAPACITY unit="MB">476940</CAPACITY>
-					<LATENCY unit="usec">12881</LATENCY>
-					<IOPS_r unit="4K">2484</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<CAPACITY unit="MB">10240</CAPACITY>
+					<LATENCY unit="usec">12649</LATENCY>
+					<IOPS_r unit="4K">2529</IOPS_r>
+					<seq_r_1M unit="MB/s">137</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -448,7 +348,7 @@
 					<CAPACITY unit="MB">0</CAPACITY>
 					<LATENCY unit="usec">2</LATENCY>
 					<IOPS_r unit="4K">16000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<seq_r_1M unit="MB/s">1915158536</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -458,7 +358,7 @@
 					<CAPACITY unit="MB">0</CAPACITY>
 					<LATENCY unit="usec">1</LATENCY>
 					<IOPS_r unit="4K">32000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<seq_r_1M unit="MB/s">1494</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -515,17 +415,17 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop0</BD_NAME>
-					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<CAPACITY unit="MB">512</CAPACITY>
+					<LATENCY unit="usec">19473</LATENCY>
+					<IOPS_r unit="4K">1643</IOPS_r>
+					<seq_r_1M unit="MB/s">10</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
+					<active type="uint">1</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram15</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
+					<CAPACITY unit="MB">488</CAPACITY>
 					<LATENCY unit="usec">1</LATENCY>
 					<IOPS_r unit="4K">32000000</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
@@ -535,27 +435,27 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram14</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram13</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram12</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
+					<CAPACITY unit="MB">488</CAPACITY>
 					<LATENCY unit="usec">1</LATENCY>
 					<IOPS_r unit="4K">32000000</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
@@ -565,7 +465,7 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram11</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
+					<CAPACITY unit="MB">488</CAPACITY>
 					<LATENCY unit="usec">1</LATENCY>
 					<IOPS_r unit="4K">32000000</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
@@ -575,27 +475,27 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram10</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram9</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram8</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
+					<CAPACITY unit="MB">488</CAPACITY>
 					<LATENCY unit="usec">1</LATENCY>
 					<IOPS_r unit="4K">32000000</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
@@ -605,7 +505,7 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram7</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
+					<CAPACITY unit="MB">488</CAPACITY>
 					<LATENCY unit="usec">1</LATENCY>
 					<IOPS_r unit="4K">32000000</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
@@ -615,17 +515,17 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram6</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram5</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
+					<CAPACITY unit="MB">488</CAPACITY>
 					<LATENCY unit="usec">1</LATENCY>
 					<IOPS_r unit="4K">32000000</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
@@ -635,137 +535,87 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram4</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram3</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram2</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram1</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram0</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 			</BLOCK_DEVICES>
-		<MEMORY type="string">24460</MEMORY>
-			<CPUS type="string">16</CPUS>
+		<MEMORY type="string">1913</MEMORY>
+			<CPUS type="string">2</CPUS>
 			</NODE>
 		<NODE>
 			<DOMAIN_GUID>NO_DOMAIN</DOMAIN_GUID>
-			<HOST_GUID type="string">dinosaur3</HOST_GUID>
+			<HOST_GUID type="string">ubuntu1</HOST_GUID>
 			<OS>
 				<Operating_System type="string">Linux</Operating_System>
-			<Version type="string">#128-Ubuntu SMP Tue Jul 15 08:41:58 UTC 2014</Version>
-			<Release type="string">2.6.32-64-server</Release>
+			<Version type="string">#102-Ubuntu SMP Wed Jan 2 22:53:00 UTC 2013</Version>
+			<Release type="string">2.6.32-45-server</Release>
 			</OS>
 			<active type="bool">true</active>
 			<NICS>
 				<NIC>
-					<NIC_GUID>0:25:90:5:a9:e1</NIC_GUID>
-					<IPv4>192.168.1.204</IPv4>
+					<NIC_GUID>8:0:27:74:51:98</NIC_GUID>
+					<IPv4>192.168.56.101</IPv4>
 					<bandwidth unit="Mb">0</bandwidth>
 					<active type="bool">false</active>
 				</NIC>
 				<NIC>
-					<NIC_GUID>0:60:dd:47:d:ee</NIC_GUID>
-					<IPv4>10.10.10.13</IPv4>
+					<NIC_GUID>8:0:27:fc:83:f</NIC_GUID>
+					<IPv4>10.0.3.15</IPv4>
 					<bandwidth unit="Mb">0</bandwidth>
 					<active type="bool">false</active>
 				</NIC>
 			</NICS>
 			<BLOCK_DEVICES>
 				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sdd</BD_NAME>
-					<CAPACITY unit="MB">476940</CAPACITY>
-					<LATENCY unit="usec">5591</LATENCY>
-					<IOPS_r unit="4K">5723</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sdc</BD_NAME>
-					<CAPACITY unit="MB">30517</CAPACITY>
-					<LATENCY unit="usec">189</LATENCY>
-					<IOPS_r unit="4K">169312</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sdb</BD_NAME>
-					<CAPACITY unit="MB">30517</CAPACITY>
-					<LATENCY unit="usec">191</LATENCY>
-					<IOPS_r unit="4K">167539</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">1</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda5</BD_NAME>
-					<CAPACITY unit="MB">3152</CAPACITY>
-					<LATENCY unit="usec">7022</LATENCY>
-					<IOPS_r unit="4K">4557</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda2</BD_NAME>
-					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">3</LATENCY>
-					<IOPS_r unit="4K">10666666</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/sda1</BD_NAME>
-					<CAPACITY unit="MB">73165</CAPACITY>
-					<LATENCY unit="usec">8384</LATENCY>
-					<IOPS_r unit="4K">3816</IOPS_r>
+					<CAPACITY unit="MB">10238</CAPACITY>
+					<LATENCY unit="usec">10099</LATENCY>
+					<IOPS_r unit="4K">3168</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -773,10 +623,10 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/sda</BD_NAME>
-					<CAPACITY unit="MB">76319</CAPACITY>
-					<LATENCY unit="usec">5417</LATENCY>
-					<IOPS_r unit="4K">5907</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<CAPACITY unit="MB">10240</CAPACITY>
+					<LATENCY unit="usec">18925</LATENCY>
+					<IOPS_r unit="4K">1690</IOPS_r>
+					<seq_r_1M unit="MB/s">352</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -786,7 +636,7 @@
 					<CAPACITY unit="MB">0</CAPACITY>
 					<LATENCY unit="usec">2</LATENCY>
 					<IOPS_r unit="4K">16000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<seq_r_1M unit="MB/s">-64552952</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -796,7 +646,7 @@
 					<CAPACITY unit="MB">0</CAPACITY>
 					<LATENCY unit="usec">1</LATENCY>
 					<IOPS_r unit="4K">32000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<seq_r_1M unit="MB/s">1065</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -853,247 +703,207 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop0</BD_NAME>
-					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<CAPACITY unit="MB">512</CAPACITY>
+					<LATENCY unit="usec">28617</LATENCY>
+					<IOPS_r unit="4K">1118</IOPS_r>
+					<seq_r_1M unit="MB/s">10</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
+					<active type="uint">1</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram15</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram14</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram13</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram12</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram11</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram10</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram9</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram8</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram7</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram6</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram5</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram4</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram3</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram2</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram1</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram0</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 			</BLOCK_DEVICES>
-		<MEMORY type="string">24451</MEMORY>
-			<CPUS type="string">16</CPUS>
+		<MEMORY type="string">1887</MEMORY>
+			<CPUS type="string">2</CPUS>
 			</NODE>
 		<NODE>
 			<DOMAIN_GUID>NO_DOMAIN</DOMAIN_GUID>
-			<HOST_GUID type="string">dinosaur4</HOST_GUID>
+			<HOST_GUID type="string">ubuntu4</HOST_GUID>
 			<OS>
 				<Operating_System type="string">Linux</Operating_System>
-			<Version type="string">#128-Ubuntu SMP Tue Jul 15 08:41:58 UTC 2014</Version>
-			<Release type="string">2.6.32-64-server</Release>
+			<Version type="string">#102-Ubuntu SMP Wed Jan 2 22:53:00 UTC 2013</Version>
+			<Release type="string">2.6.32-45-server</Release>
 			</OS>
 			<active type="bool">true</active>
 			<NICS>
 				<NIC>
-					<NIC_GUID>0:25:90:3a:e4:af</NIC_GUID>
-					<IPv4>192.168.1.205</IPv4>
+					<NIC_GUID>8:0:27:e1:b1:ad</NIC_GUID>
+					<IPv4>192.168.56.104</IPv4>
 					<bandwidth unit="Mb">0</bandwidth>
 					<active type="bool">false</active>
 				</NIC>
 				<NIC>
-					<NIC_GUID>0:60:dd:47:d:c4</NIC_GUID>
-					<IPv4>10.10.10.14</IPv4>
+					<NIC_GUID>8:0:27:34:ae:52</NIC_GUID>
+					<IPv4>10.0.3.15</IPv4>
 					<bandwidth unit="Mb">0</bandwidth>
 					<active type="bool">false</active>
 				</NIC>
 			</NICS>
 			<BLOCK_DEVICES>
 				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sdc</BD_NAME>
-					<CAPACITY unit="MB">30517</CAPACITY>
-					<LATENCY unit="usec">213</LATENCY>
-					<IOPS_r unit="4K">150234</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sdb</BD_NAME>
-					<CAPACITY unit="MB">30517</CAPACITY>
-					<LATENCY unit="usec">197</LATENCY>
-					<IOPS_r unit="4K">162436</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">1</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda5</BD_NAME>
-					<CAPACITY unit="MB">76074</CAPACITY>
-					<LATENCY unit="usec">5946</LATENCY>
-					<IOPS_r unit="4K">5381</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
-					<BD_NAME type="string">/dev/sda2</BD_NAME>
-					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">3</LATENCY>
-					<IOPS_r unit="4K">10666666</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
-					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
-				</BLOCK_DEVICE>
-				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/sda1</BD_NAME>
-					<CAPACITY unit="MB">243</CAPACITY>
-					<LATENCY unit="usec">16420</LATENCY>
-					<IOPS_r unit="4K">1948</IOPS_r>
+					<CAPACITY unit="MB">10238</CAPACITY>
+					<LATENCY unit="usec">3084</LATENCY>
+					<IOPS_r unit="4K">10376</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -1101,10 +911,10 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/sda</BD_NAME>
-					<CAPACITY unit="MB">76319</CAPACITY>
-					<LATENCY unit="usec">6378</LATENCY>
-					<IOPS_r unit="4K">5017</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<CAPACITY unit="MB">10240</CAPACITY>
+					<LATENCY unit="usec">8496</LATENCY>
+					<IOPS_r unit="4K">3766</IOPS_r>
+					<seq_r_1M unit="MB/s">144</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -1112,9 +922,9 @@
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop7</BD_NAME>
 					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">3</LATENCY>
-					<IOPS_r unit="4K">10666666</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<LATENCY unit="usec">6</LATENCY>
+					<IOPS_r unit="4K">5333333</IOPS_r>
+					<seq_r_1M unit="MB/s">874971144</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -1122,9 +932,9 @@
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop6</BD_NAME>
 					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<LATENCY unit="usec">3</LATENCY>
+					<IOPS_r unit="4K">10666666</IOPS_r>
+					<seq_r_1M unit="MB/s">1430</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
@@ -1132,8 +942,8 @@
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop5</BD_NAME>
 					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<LATENCY unit="usec">3</LATENCY>
+					<IOPS_r unit="4K">10666666</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -1142,8 +952,8 @@
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop4</BD_NAME>
 					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<LATENCY unit="usec">3</LATENCY>
+					<IOPS_r unit="4K">10666666</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -1152,8 +962,8 @@
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop3</BD_NAME>
 					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<LATENCY unit="usec">3</LATENCY>
+					<IOPS_r unit="4K">10666666</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -1162,8 +972,8 @@
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop2</BD_NAME>
 					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<LATENCY unit="usec">3</LATENCY>
+					<IOPS_r unit="4K">10666666</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -1172,8 +982,8 @@
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop1</BD_NAME>
 					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<LATENCY unit="usec">3</LATENCY>
+					<IOPS_r unit="4K">10666666</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -1181,89 +991,89 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/loop0</BD_NAME>
-					<CAPACITY unit="MB">0</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
-					<seq_r_1M unit="MB/s">0</seq_r_1M>
+					<CAPACITY unit="MB">512</CAPACITY>
+					<LATENCY unit="usec">10833</LATENCY>
+					<IOPS_r unit="4K">2953</IOPS_r>
+					<seq_r_1M unit="MB/s">10</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
-					<active type="uint">0</active>
+					<active type="uint">1</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram15</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram14</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram13</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram12</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram11</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">3</LATENCY>
-					<IOPS_r unit="4K">10666666</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram10</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram9</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">1</LATENCY>
-					<IOPS_r unit="4K">32000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram8</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">1</LATENCY>
+					<IOPS_r unit="4K">32000000</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
 					<MEDIA>FLASH</MEDIA>
 					<pool type="string">NO_POOL</pool>
@@ -1271,91 +1081,91 @@
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram7</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram6</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram5</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">3</LATENCY>
-					<IOPS_r unit="4K">10666666</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram4</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram3</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram2</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram1</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 				<BLOCK_DEVICE>
 					<BD_NAME type="string">/dev/ram0</BD_NAME>
-					<CAPACITY unit="MB">1953</CAPACITY>
-					<LATENCY unit="usec">2</LATENCY>
-					<IOPS_r unit="4K">16000000</IOPS_r>
+					<CAPACITY unit="MB">488</CAPACITY>
+					<LATENCY unit="usec">0</LATENCY>
+					<IOPS_r unit="4K">0</IOPS_r>
 					<seq_r_1M unit="MB/s">0</seq_r_1M>
-					<MEDIA>FLASH</MEDIA>
+					<MEDIA>ROTATING</MEDIA>
 					<pool type="string">NO_POOL</pool>
 					<active type="uint">0</active>
 				</BLOCK_DEVICE>
 			</BLOCK_DEVICES>
-		<MEMORY type="string">24452</MEMORY>
-			<CPUS type="string">16</CPUS>
+		<MEMORY type="string">1914</MEMORY>
+			<CPUS type="string">2</CPUS>
 			</NODE>
 	</NODES>
   <DOMAINS/>
-  <POLICIES><POLICY><POLICY_ID>NONE</POLICY_ID></POLICY>	<POLICY>
+  <POLICIES><POLICY><POLICY_ID type="string">NONE</POLICY_ID></POLICY>	<POLICY>
 			<POLICY_ID type="string">latency-adjustment</POLICY_ID>
 			<THINLY_PROVISIONED type="bool">true</THINLY_PROVISIONED>
 			<SLA_LATENCY unit="usec">1500</SLA_LATENCY>
@@ -1367,20 +1177,20 @@
   <ACCESS_PERMISSIONS><ACCESS_PERMISSION><access_permission_id type="string">RW</access_permission_id></ACCESS_PERMISSION><ACCESS_PERMISSION><access_permission_id type="string">RO</access_permission_id></ACCESS_PERMISSION><ACCESS_PERMISSION><access_permission_id type="string">NA</access_permission_id></ACCESS_PERMISSION></ACCESS_PERMISSIONS>
   <VOLUMES>	<VOLUME>
 			<VOLUME_GUID type="uint">1</VOLUME_GUID>
-			<NAME type="string">just_start</NAME>
-			<CAPACITY unit="MB">1000</CAPACITY>
-			<REPLICAS type="uint">2</REPLICAS>
+			<NAME type="string">000_startstop</NAME>
+			<CAPACITY unit="MB">2000</CAPACITY>
+			<REPLICAS type="uint">3</REPLICAS>
 			<POLICY_ID>latency-adjustment</POLICY_ID>
 			<CENTRAL_LOG_LEVEL>INFO</CENTRAL_LOG_LEVEL>
 			<ACTIVE type="string">ONLINE_HEALTHY</ACTIVE>
 			<CORE_ID type="uint">1</CORE_ID>
-			<MAX_TARGET_CORE_IP_INDEX type="uint">3</MAX_TARGET_CORE_IP_INDEX>
+			<MAX_TARGET_CORE_INDEX type="uint">3</MAX_TARGET_CORE_INDEX>
 			<TARGETS>
 				<TARGET>
-					<HOST_GUID>ray1</HOST_GUID>
-					<NIC_GUID>0:60:dd:47:d:c9</NIC_GUID>
+					<HOST_GUID>ubuntu1</HOST_GUID>
+					<NIC_GUID>8:0:27:74:51:98</NIC_GUID>
 					<BLOCK_DEVICE>
-						<BD_NAME>/dev/sdb</BD_NAME>
+						<BD_NAME>/dev/loop0</BD_NAME>
 						<PROVISION unit="MB">512</PROVISION>
 					</BLOCK_DEVICE>
 					<STATISTICS>
@@ -1395,33 +1205,31 @@
 						<EUG_BLOCKS_READS>0</EUG_BLOCKS_READS>
 						<EUG_IOPS>0</EUG_IOPS>
 						<EUG_THROUGHPUT>0</EUG_THROUGHPUT>
-						<DS_READS>0</DS_READS>
-						<DS_READS_DIFF>0</DS_READS_DIFF>
+						<DS_READS>52</DS_READS>
+						<DS_READS_DIFF>13</DS_READS_DIFF>
 						<DS_READS_MERGED>0</DS_READS_MERGED>
 						<DS_SECTORS_READ>0</DS_SECTORS_READ>
 						<DS_TIME_READ>0</DS_TIME_READ>
-						<DS_WRITES>0</DS_WRITES>
-						<DS_WRITES_DIFF>0</DS_WRITES_DIFF>
+						<DS_WRITES>15</DS_WRITES>
+						<DS_WRITES_DIFF>8</DS_WRITES_DIFF>
 						<DS_WRITES_MERGED>0</DS_WRITES_MERGED>
-						<DS_SECTORS_WRITTEN>0</DS_SECTORS_WRITTEN>
+						<DS_SECTORS_WRITTEN>1040</DS_SECTORS_WRITTEN>
 						<DS_TIME_WRITE>0</DS_TIME_WRITE>
 						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
 						<DS_TIME_IOS>0</DS_TIME_IOS>
-						<MEM_UTIL>0</MEM_UTIL>
-						<CPU_UTIL>0</CPU_UTIL>
 						</STATISTICS>
 					<PORT type="uint">8666</PORT>
 					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
 					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
 					<ACTIVE type="string">TARGET_ONLINE</ACTIVE>
 				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
-					<CORE_IP_INDEX type="uint">0</CORE_IP_INDEX>
+					<CORE_INDEX type="uint">0</CORE_INDEX>
 						</TARGET>
 				<TARGET>
-					<HOST_GUID>xray7</HOST_GUID>
-					<NIC_GUID>0:60:dd:47:d:d9</NIC_GUID>
+					<HOST_GUID>ubuntu2</HOST_GUID>
+					<NIC_GUID>8:0:27:94:ed:6</NIC_GUID>
 					<BLOCK_DEVICE>
-						<BD_NAME>/dev/sdb</BD_NAME>
+						<BD_NAME>/dev/loop0</BD_NAME>
 						<PROVISION unit="MB">512</PROVISION>
 					</BLOCK_DEVICE>
 					<STATISTICS>
@@ -1429,40 +1237,38 @@
 						<EUG_TOTAL_REQUESTS>0</EUG_TOTAL_REQUESTS>
 						<EUG_TOTAL_BLOCKS>0</EUG_TOTAL_BLOCKS>
 						<EUG_TOTAL_REQ_MISSES>0</EUG_TOTAL_REQ_MISSES>
-						<EUG_TARGET_USED>0</EUG_TARGET_USED>
+						<EUG_TARGET_USED>8000</EUG_TARGET_USED>
 						<EUG_TOTAL_REQ_WRITES>0</EUG_TOTAL_REQ_WRITES>
 						<EUG_TOTAL_REQ_READS>0</EUG_TOTAL_REQ_READS>
 						<EUG_BLOCKS_WRITES>0</EUG_BLOCKS_WRITES>
 						<EUG_BLOCKS_READS>0</EUG_BLOCKS_READS>
 						<EUG_IOPS>0</EUG_IOPS>
 						<EUG_THROUGHPUT>0</EUG_THROUGHPUT>
-						<DS_READS>0</DS_READS>
-						<DS_READS_DIFF>0</DS_READS_DIFF>
+						<DS_READS>4300</DS_READS>
+						<DS_READS_DIFF>243532</DS_READS_DIFF>
 						<DS_READS_MERGED>0</DS_READS_MERGED>
-						<DS_SECTORS_READ>0</DS_SECTORS_READ>
+						<DS_SECTORS_READ>200</DS_SECTORS_READ>
 						<DS_TIME_READ>0</DS_TIME_READ>
-						<DS_WRITES>0</DS_WRITES>
-						<DS_WRITES_DIFF>0</DS_WRITES_DIFF>
+						<DS_WRITES>23</DS_WRITES>
+						<DS_WRITES_DIFF>423532</DS_WRITES_DIFF>
 						<DS_WRITES_MERGED>0</DS_WRITES_MERGED>
-						<DS_SECTORS_WRITTEN>0</DS_SECTORS_WRITTEN>
+						<DS_SECTORS_WRITTEN>300</DS_SECTORS_WRITTEN>
 						<DS_TIME_WRITE>0</DS_TIME_WRITE>
 						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
 						<DS_TIME_IOS>0</DS_TIME_IOS>
-						<MEM_UTIL>0</MEM_UTIL>
-						<CPU_UTIL>0</CPU_UTIL>
 						</STATISTICS>
 					<PORT type="uint">8666</PORT>
 					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
 					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
 					<ACTIVE type="string">TARGET_ONLINE</ACTIVE>
 				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
-					<CORE_IP_INDEX type="uint">1</CORE_IP_INDEX>
+					<CORE_INDEX type="uint">1</CORE_INDEX>
 						</TARGET>
 				<TARGET>
-					<HOST_GUID>dinosaur3</HOST_GUID>
-					<NIC_GUID>0:60:dd:47:d:ee</NIC_GUID>
+					<HOST_GUID>ubuntu3</HOST_GUID>
+					<NIC_GUID>8:0:27:48:6:9</NIC_GUID>
 					<BLOCK_DEVICE>
-						<BD_NAME>/dev/sdb</BD_NAME>
+						<BD_NAME>/dev/loop0</BD_NAME>
 						<PROVISION unit="MB">512</PROVISION>
 					</BLOCK_DEVICE>
 					<STATISTICS>
@@ -1489,21 +1295,19 @@
 						<DS_TIME_WRITE>0</DS_TIME_WRITE>
 						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
 						<DS_TIME_IOS>0</DS_TIME_IOS>
-						<MEM_UTIL>0</MEM_UTIL>
-						<CPU_UTIL>0</CPU_UTIL>
 						</STATISTICS>
 					<PORT type="uint">8666</PORT>
 					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
 					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
 					<ACTIVE type="string">TARGET_ONLINE</ACTIVE>
 				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
-					<CORE_IP_INDEX type="uint">2</CORE_IP_INDEX>
+					<CORE_INDEX type="uint">2</CORE_INDEX>
 						</TARGET>
 				<TARGET>
-					<HOST_GUID>dinosaur4</HOST_GUID>
-					<NIC_GUID>0:60:dd:47:d:c4</NIC_GUID>
+					<HOST_GUID>ubuntu4</HOST_GUID>
+					<NIC_GUID>8:0:27:e1:b1:ad</NIC_GUID>
 					<BLOCK_DEVICE>
-						<BD_NAME>/dev/sdb</BD_NAME>
+						<BD_NAME>/dev/loop0</BD_NAME>
 						<PROVISION unit="MB">512</PROVISION>
 					</BLOCK_DEVICE>
 					<STATISTICS>
@@ -1530,17 +1334,354 @@
 						<DS_TIME_WRITE>0</DS_TIME_WRITE>
 						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
 						<DS_TIME_IOS>0</DS_TIME_IOS>
-						<MEM_UTIL>0</MEM_UTIL>
-						<CPU_UTIL>0</CPU_UTIL>
 						</STATISTICS>
 					<PORT type="uint">8666</PORT>
 					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
 					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
-					<ACTIVE type="string">TARGET_ONLINE</ACTIVE>
+					<ACTIVE type="string">TARGET_OFFLINE_LOST</ACTIVE>
 				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
-					<CORE_IP_INDEX type="uint">3</CORE_IP_INDEX>
+					<CORE_INDEX type="uint">3</CORE_INDEX>
 						</TARGET>
 			</TARGETS>
 		</VOLUME>
+		<VOLUME>
+			<VOLUME_GUID type="uint">2</VOLUME_GUID>
+			<NAME type="string">111_startstop</NAME>
+			<CAPACITY unit="MB">2000</CAPACITY>
+			<REPLICAS type="uint">3</REPLICAS>
+			<POLICY_ID>latency-adjustment</POLICY_ID>
+			<CENTRAL_LOG_LEVEL>INFO</CENTRAL_LOG_LEVEL>
+			<ACTIVE type="string">OFFLINE_DEGRADED</ACTIVE>
+			<CORE_ID type="uint">1</CORE_ID>
+			<MAX_TARGET_CORE_INDEX type="uint">3</MAX_TARGET_CORE_INDEX>
+			<TARGETS>
+				<TARGET>
+					<HOST_GUID>ubuntu1</HOST_GUID>
+					<NIC_GUID>8:0:27:74:51:98</NIC_GUID>
+					<BLOCK_DEVICE>
+						<BD_NAME>/dev/loop0</BD_NAME>
+						<PROVISION unit="MB">512</PROVISION>
+					</BLOCK_DEVICE>
+					<STATISTICS>
+						<EUG_TOTAL_HITS>0</EUG_TOTAL_HITS>
+						<EUG_TOTAL_REQUESTS>0</EUG_TOTAL_REQUESTS>
+						<EUG_TOTAL_BLOCKS>0</EUG_TOTAL_BLOCKS>
+						<EUG_TOTAL_REQ_MISSES>0</EUG_TOTAL_REQ_MISSES>
+						<EUG_TARGET_USED>0</EUG_TARGET_USED>
+						<EUG_TOTAL_REQ_WRITES>0</EUG_TOTAL_REQ_WRITES>
+						<EUG_TOTAL_REQ_READS>0</EUG_TOTAL_REQ_READS>
+						<EUG_BLOCKS_WRITES>0</EUG_BLOCKS_WRITES>
+						<EUG_BLOCKS_READS>0</EUG_BLOCKS_READS>
+						<EUG_IOPS>0</EUG_IOPS>
+						<EUG_THROUGHPUT>0</EUG_THROUGHPUT>
+						<DS_READS>0</DS_READS>
+						<DS_READS_DIFF>0</DS_READS_DIFF>
+						<DS_READS_MERGED>0</DS_READS_MERGED>
+						<DS_SECTORS_READ>0</DS_SECTORS_READ>
+						<DS_TIME_READ>0</DS_TIME_READ>
+						<DS_WRITES>0</DS_WRITES>
+						<DS_WRITES_DIFF>0</DS_WRITES_DIFF>
+						<DS_WRITES_MERGED>0</DS_WRITES_MERGED>
+						<DS_SECTORS_WRITTEN>0</DS_SECTORS_WRITTEN>
+						<DS_TIME_WRITE>0</DS_TIME_WRITE>
+						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
+						<DS_TIME_IOS>0</DS_TIME_IOS>
+						</STATISTICS>
+					<PORT type="uint">8666</PORT>
+					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
+					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
+					<ACTIVE type="string">TARGET_ONLINE</ACTIVE>
+				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
+					<CORE_INDEX type="uint">0</CORE_INDEX>
+						</TARGET>
+				<TARGET>
+					<HOST_GUID>ubuntu2</HOST_GUID>
+					<NIC_GUID>8:0:27:94:ed:6</NIC_GUID>
+					<BLOCK_DEVICE>
+						<BD_NAME>/dev/loop0</BD_NAME>
+						<PROVISION unit="MB">512</PROVISION>
+					</BLOCK_DEVICE>
+					<STATISTICS>
+						<EUG_TOTAL_HITS>0</EUG_TOTAL_HITS>
+						<EUG_TOTAL_REQUESTS>0</EUG_TOTAL_REQUESTS>
+						<EUG_TOTAL_BLOCKS>0</EUG_TOTAL_BLOCKS>
+						<EUG_TOTAL_REQ_MISSES>0</EUG_TOTAL_REQ_MISSES>
+						<EUG_TARGET_USED>0</EUG_TARGET_USED>
+						<EUG_TOTAL_REQ_WRITES>0</EUG_TOTAL_REQ_WRITES>
+						<EUG_TOTAL_REQ_READS>0</EUG_TOTAL_REQ_READS>
+						<EUG_BLOCKS_WRITES>0</EUG_BLOCKS_WRITES>
+						<EUG_BLOCKS_READS>0</EUG_BLOCKS_READS>
+						<EUG_IOPS>0</EUG_IOPS>
+						<EUG_THROUGHPUT>0</EUG_THROUGHPUT>
+						<DS_READS>0</DS_READS>
+						<DS_READS_DIFF>0</DS_READS_DIFF>
+						<DS_READS_MERGED>0</DS_READS_MERGED>
+						<DS_SECTORS_READ>0</DS_SECTORS_READ>
+						<DS_TIME_READ>0</DS_TIME_READ>
+						<DS_WRITES>0</DS_WRITES>
+						<DS_WRITES_DIFF>0</DS_WRITES_DIFF>
+						<DS_WRITES_MERGED>0</DS_WRITES_MERGED>
+						<DS_SECTORS_WRITTEN>0</DS_SECTORS_WRITTEN>
+						<DS_TIME_WRITE>0</DS_TIME_WRITE>
+						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
+						<DS_TIME_IOS>0</DS_TIME_IOS>
+						</STATISTICS>
+					<PORT type="uint">8666</PORT>
+					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
+					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
+					<ACTIVE type="string">TARGET_ONLINE</ACTIVE>
+				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
+					<CORE_INDEX type="uint">1</CORE_INDEX>
+						</TARGET>
+				<TARGET>
+					<HOST_GUID>ubuntu3</HOST_GUID>
+					<NIC_GUID>8:0:27:48:6:9</NIC_GUID>
+					<BLOCK_DEVICE>
+						<BD_NAME>/dev/loop0</BD_NAME>
+						<PROVISION unit="MB">512</PROVISION>
+					</BLOCK_DEVICE>
+					<STATISTICS>
+						<EUG_TOTAL_HITS>0</EUG_TOTAL_HITS>
+						<EUG_TOTAL_REQUESTS>0</EUG_TOTAL_REQUESTS>
+						<EUG_TOTAL_BLOCKS>0</EUG_TOTAL_BLOCKS>
+						<EUG_TOTAL_REQ_MISSES>0</EUG_TOTAL_REQ_MISSES>
+						<EUG_TARGET_USED>0</EUG_TARGET_USED>
+						<EUG_TOTAL_REQ_WRITES>0</EUG_TOTAL_REQ_WRITES>
+						<EUG_TOTAL_REQ_READS>0</EUG_TOTAL_REQ_READS>
+						<EUG_BLOCKS_WRITES>0</EUG_BLOCKS_WRITES>
+						<EUG_BLOCKS_READS>0</EUG_BLOCKS_READS>
+						<EUG_IOPS>0</EUG_IOPS>
+						<EUG_THROUGHPUT>0</EUG_THROUGHPUT>
+						<DS_READS>0</DS_READS>
+						<DS_READS_DIFF>0</DS_READS_DIFF>
+						<DS_READS_MERGED>0</DS_READS_MERGED>
+						<DS_SECTORS_READ>0</DS_SECTORS_READ>
+						<DS_TIME_READ>0</DS_TIME_READ>
+						<DS_WRITES>0</DS_WRITES>
+						<DS_WRITES_DIFF>0</DS_WRITES_DIFF>
+						<DS_WRITES_MERGED>0</DS_WRITES_MERGED>
+						<DS_SECTORS_WRITTEN>0</DS_SECTORS_WRITTEN>
+						<DS_TIME_WRITE>0</DS_TIME_WRITE>
+						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
+						<DS_TIME_IOS>0</DS_TIME_IOS>
+						</STATISTICS>
+					<PORT type="uint">8666</PORT>
+					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
+					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
+					<ACTIVE type="string">TARGET_OFFLINE_LOST</ACTIVE>
+				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
+					<CORE_INDEX type="uint">2</CORE_INDEX>
+						</TARGET>
+				<TARGET>
+					<HOST_GUID>ubuntu4</HOST_GUID>
+					<NIC_GUID>8:0:27:e1:b1:ad</NIC_GUID>
+					<BLOCK_DEVICE>
+						<BD_NAME>/dev/loop0</BD_NAME>
+						<PROVISION unit="MB">512</PROVISION>
+					</BLOCK_DEVICE>
+					<STATISTICS>
+						<EUG_TOTAL_HITS>0</EUG_TOTAL_HITS>
+						<EUG_TOTAL_REQUESTS>0</EUG_TOTAL_REQUESTS>
+						<EUG_TOTAL_BLOCKS>0</EUG_TOTAL_BLOCKS>
+						<EUG_TOTAL_REQ_MISSES>0</EUG_TOTAL_REQ_MISSES>
+						<EUG_TARGET_USED>0</EUG_TARGET_USED>
+						<EUG_TOTAL_REQ_WRITES>0</EUG_TOTAL_REQ_WRITES>
+						<EUG_TOTAL_REQ_READS>0</EUG_TOTAL_REQ_READS>
+						<EUG_BLOCKS_WRITES>0</EUG_BLOCKS_WRITES>
+						<EUG_BLOCKS_READS>0</EUG_BLOCKS_READS>
+						<EUG_IOPS>0</EUG_IOPS>
+						<EUG_THROUGHPUT>0</EUG_THROUGHPUT>
+						<DS_READS>0</DS_READS>
+						<DS_READS_DIFF>0</DS_READS_DIFF>
+						<DS_READS_MERGED>0</DS_READS_MERGED>
+						<DS_SECTORS_READ>0</DS_SECTORS_READ>
+						<DS_TIME_READ>0</DS_TIME_READ>
+						<DS_WRITES>0</DS_WRITES>
+						<DS_WRITES_DIFF>0</DS_WRITES_DIFF>
+						<DS_WRITES_MERGED>0</DS_WRITES_MERGED>
+						<DS_SECTORS_WRITTEN>0</DS_SECTORS_WRITTEN>
+						<DS_TIME_WRITE>0</DS_TIME_WRITE>
+						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
+						<DS_TIME_IOS>0</DS_TIME_IOS>
+						</STATISTICS>
+					<PORT type="uint">8666</PORT>
+					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
+					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
+					<ACTIVE type="string">TARGET_OFFLINE_LOST</ACTIVE>
+				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
+					<CORE_INDEX type="uint">3</CORE_INDEX>
+						</TARGET>
+			</TARGETS>
+		    </VOLUME>
+		    <VOLUME>
+			<VOLUME_GUID type="uint">3</VOLUME_GUID>
+			<NAME type="string">222_startstop</NAME>
+			<CAPACITY unit="MB">2000</CAPACITY>
+			<REPLICAS type="uint">3</REPLICAS>
+			<POLICY_ID>latency-adjustment</POLICY_ID>
+			<CENTRAL_LOG_LEVEL>INFO</CENTRAL_LOG_LEVEL>
+			<ACTIVE type="string">UNINITIALIZED</ACTIVE>
+			<CORE_ID type="uint">1</CORE_ID>
+			<MAX_TARGET_CORE_INDEX type="uint">3</MAX_TARGET_CORE_INDEX>
+			<TARGETS>
+				<TARGET>
+					<HOST_GUID>ubuntu1</HOST_GUID>
+					<NIC_GUID>8:0:27:74:51:98</NIC_GUID>
+					<BLOCK_DEVICE>
+						<BD_NAME>/dev/loop0</BD_NAME>
+						<PROVISION unit="MB">512</PROVISION>
+					</BLOCK_DEVICE>
+					<STATISTICS>
+						<EUG_TOTAL_HITS>0</EUG_TOTAL_HITS>
+						<EUG_TOTAL_REQUESTS>0</EUG_TOTAL_REQUESTS>
+						<EUG_TOTAL_BLOCKS>0</EUG_TOTAL_BLOCKS>
+						<EUG_TOTAL_REQ_MISSES>0</EUG_TOTAL_REQ_MISSES>
+						<EUG_TARGET_USED>0</EUG_TARGET_USED>
+						<EUG_TOTAL_REQ_WRITES>0</EUG_TOTAL_REQ_WRITES>
+						<EUG_TOTAL_REQ_READS>0</EUG_TOTAL_REQ_READS>
+						<EUG_BLOCKS_WRITES>0</EUG_BLOCKS_WRITES>
+						<EUG_BLOCKS_READS>0</EUG_BLOCKS_READS>
+						<EUG_IOPS>0</EUG_IOPS>
+						<EUG_THROUGHPUT>0</EUG_THROUGHPUT>
+						<DS_READS>0</DS_READS>
+						<DS_READS_DIFF>0</DS_READS_DIFF>
+						<DS_READS_MERGED>0</DS_READS_MERGED>
+						<DS_SECTORS_READ>0</DS_SECTORS_READ>
+						<DS_TIME_READ>0</DS_TIME_READ>
+						<DS_WRITES>0</DS_WRITES>
+						<DS_WRITES_DIFF>0</DS_WRITES_DIFF>
+						<DS_WRITES_MERGED>0</DS_WRITES_MERGED>
+						<DS_SECTORS_WRITTEN>0</DS_SECTORS_WRITTEN>
+						<DS_TIME_WRITE>0</DS_TIME_WRITE>
+						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
+						<DS_TIME_IOS>0</DS_TIME_IOS>
+						</STATISTICS>
+					<PORT type="uint">8666</PORT>
+					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
+					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
+					<ACTIVE type="string">TARGET_ONLINE</ACTIVE>
+				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
+					<CORE_INDEX type="uint">0</CORE_INDEX>
+						</TARGET>
+				<TARGET>
+					<HOST_GUID>ubuntu2</HOST_GUID>
+					<NIC_GUID>8:0:27:94:ed:6</NIC_GUID>
+					<BLOCK_DEVICE>
+						<BD_NAME>/dev/loop0</BD_NAME>
+						<PROVISION unit="MB">512</PROVISION>
+					</BLOCK_DEVICE>
+					<STATISTICS>
+						<EUG_TOTAL_HITS>0</EUG_TOTAL_HITS>
+						<EUG_TOTAL_REQUESTS>0</EUG_TOTAL_REQUESTS>
+						<EUG_TOTAL_BLOCKS>0</EUG_TOTAL_BLOCKS>
+						<EUG_TOTAL_REQ_MISSES>0</EUG_TOTAL_REQ_MISSES>
+						<EUG_TARGET_USED>0</EUG_TARGET_USED>
+						<EUG_TOTAL_REQ_WRITES>0</EUG_TOTAL_REQ_WRITES>
+						<EUG_TOTAL_REQ_READS>0</EUG_TOTAL_REQ_READS>
+						<EUG_BLOCKS_WRITES>0</EUG_BLOCKS_WRITES>
+						<EUG_BLOCKS_READS>0</EUG_BLOCKS_READS>
+						<EUG_IOPS>0</EUG_IOPS>
+						<EUG_THROUGHPUT>0</EUG_THROUGHPUT>
+						<DS_READS>0</DS_READS>
+						<DS_READS_DIFF>0</DS_READS_DIFF>
+						<DS_READS_MERGED>0</DS_READS_MERGED>
+						<DS_SECTORS_READ>0</DS_SECTORS_READ>
+						<DS_TIME_READ>0</DS_TIME_READ>
+						<DS_WRITES>0</DS_WRITES>
+						<DS_WRITES_DIFF>0</DS_WRITES_DIFF>
+						<DS_WRITES_MERGED>0</DS_WRITES_MERGED>
+						<DS_SECTORS_WRITTEN>0</DS_SECTORS_WRITTEN>
+						<DS_TIME_WRITE>0</DS_TIME_WRITE>
+						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
+						<DS_TIME_IOS>0</DS_TIME_IOS>
+						</STATISTICS>
+					<PORT type="uint">8666</PORT>
+					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
+					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
+					<ACTIVE type="string">TARGET_ONLINE</ACTIVE>
+				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
+					<CORE_INDEX type="uint">1</CORE_INDEX>
+						</TARGET>
+				<TARGET>
+					<HOST_GUID>ubuntu3</HOST_GUID>
+					<NIC_GUID>8:0:27:48:6:9</NIC_GUID>
+					<BLOCK_DEVICE>
+						<BD_NAME>/dev/loop0</BD_NAME>
+						<PROVISION unit="MB">512</PROVISION>
+					</BLOCK_DEVICE>
+					<STATISTICS>
+						<EUG_TOTAL_HITS>0</EUG_TOTAL_HITS>
+						<EUG_TOTAL_REQUESTS>0</EUG_TOTAL_REQUESTS>
+						<EUG_TOTAL_BLOCKS>0</EUG_TOTAL_BLOCKS>
+						<EUG_TOTAL_REQ_MISSES>0</EUG_TOTAL_REQ_MISSES>
+						<EUG_TARGET_USED>0</EUG_TARGET_USED>
+						<EUG_TOTAL_REQ_WRITES>0</EUG_TOTAL_REQ_WRITES>
+						<EUG_TOTAL_REQ_READS>0</EUG_TOTAL_REQ_READS>
+						<EUG_BLOCKS_WRITES>0</EUG_BLOCKS_WRITES>
+						<EUG_BLOCKS_READS>0</EUG_BLOCKS_READS>
+						<EUG_IOPS>0</EUG_IOPS>
+						<EUG_THROUGHPUT>0</EUG_THROUGHPUT>
+						<DS_READS>0</DS_READS>
+						<DS_READS_DIFF>0</DS_READS_DIFF>
+						<DS_READS_MERGED>0</DS_READS_MERGED>
+						<DS_SECTORS_READ>0</DS_SECTORS_READ>
+						<DS_TIME_READ>0</DS_TIME_READ>
+						<DS_WRITES>0</DS_WRITES>
+						<DS_WRITES_DIFF>0</DS_WRITES_DIFF>
+						<DS_WRITES_MERGED>0</DS_WRITES_MERGED>
+						<DS_SECTORS_WRITTEN>0</DS_SECTORS_WRITTEN>
+						<DS_TIME_WRITE>0</DS_TIME_WRITE>
+						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
+						<DS_TIME_IOS>0</DS_TIME_IOS>
+						</STATISTICS>
+					<PORT type="uint">8666</PORT>
+					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
+					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
+					<ACTIVE type="string">TARGET_OFFLINE_LOST</ACTIVE>
+				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
+					<CORE_INDEX type="uint">2</CORE_INDEX>
+						</TARGET>
+				<TARGET>
+					<HOST_GUID>ubuntu4</HOST_GUID>
+					<NIC_GUID>8:0:27:e1:b1:ad</NIC_GUID>
+					<BLOCK_DEVICE>
+						<BD_NAME>/dev/loop0</BD_NAME>
+						<PROVISION unit="MB">512</PROVISION>
+					</BLOCK_DEVICE>
+					<STATISTICS>
+						<EUG_TOTAL_HITS>0</EUG_TOTAL_HITS>
+						<EUG_TOTAL_REQUESTS>0</EUG_TOTAL_REQUESTS>
+						<EUG_TOTAL_BLOCKS>0</EUG_TOTAL_BLOCKS>
+						<EUG_TOTAL_REQ_MISSES>0</EUG_TOTAL_REQ_MISSES>
+						<EUG_TARGET_USED>0</EUG_TARGET_USED>
+						<EUG_TOTAL_REQ_WRITES>0</EUG_TOTAL_REQ_WRITES>
+						<EUG_TOTAL_REQ_READS>0</EUG_TOTAL_REQ_READS>
+						<EUG_BLOCKS_WRITES>0</EUG_BLOCKS_WRITES>
+						<EUG_BLOCKS_READS>0</EUG_BLOCKS_READS>
+						<EUG_IOPS>0</EUG_IOPS>
+						<EUG_THROUGHPUT>0</EUG_THROUGHPUT>
+						<DS_READS>0</DS_READS>
+						<DS_READS_DIFF>0</DS_READS_DIFF>
+						<DS_READS_MERGED>0</DS_READS_MERGED>
+						<DS_SECTORS_READ>100</DS_SECTORS_READ>
+						<DS_TIME_READ>0</DS_TIME_READ>
+						<DS_WRITES>0</DS_WRITES>
+						<DS_WRITES_DIFF>0</DS_WRITES_DIFF>
+						<DS_WRITES_MERGED>0</DS_WRITES_MERGED>
+						<DS_SECTORS_WRITTEN>0</DS_SECTORS_WRITTEN>
+						<DS_TIME_WRITE>0</DS_TIME_WRITE>
+						<DS_INFLIGHT_IOS>0</DS_INFLIGHT_IOS>
+						<DS_TIME_IOS>0</DS_TIME_IOS>
+						</STATISTICS>
+					<PORT type="uint">8666</PORT>
+					<ACCESS_PERMISSIONS_ID>RW</ACCESS_PERMISSIONS_ID>
+					<LOCAL_LOG_LEVEL>INFO</LOCAL_LOG_LEVEL>
+					<ACTIVE type="string">TARGET_OFFLINE_LOST</ACTIVE>
+				<TARGET_MIN_FREE_EXTENTS>5</TARGET_MIN_FREE_EXTENTS>
+					<CORE_INDEX type="uint">3</CORE_INDEX>
+						</TARGET>
+			</TARGETS>
+		</VOLUME>
+
 	</VOLUMES>
 </EUGENIA_CONFIGURATION_FILE>

@@ -17,7 +17,7 @@ $(function () {
             text: ''
         },
         xAxis: {
-            categories: ['Devices', 'Assigned', 'Used']
+            categories: ['Total', 'Assigned', 'Used']
         },
         yAxis: {
             min: 0,
@@ -282,12 +282,12 @@ devicesChart = new Highcharts.Chart(Highcharts.merge(devicesChartOpions, devices
 //update the chart with the right values from xml
 function volumesWidgetUpdate(){
     if(window.volumes == undefined){return ;}
-    window.devicesChart.series[0].data[0].update(devices.devices-50);
-    window.devicesChart.series[1].data[0].update(8);
-    window.devicesChart.series[0].data[1].update(devices.assigned);
-    window.devicesChart.series[1].data[1].update(5);
-    window.devicesChart.series[0].data[2].update(devices.used);
-    window.devicesChart.series[1].data[2].update(3);
+    window.devicesChart.series[0].data[0].update(devices.total.flash);
+    window.devicesChart.series[1].data[0].update(devices.total.disks);
+    window.devicesChart.series[0].data[1].update(devices.assigned.flash);
+    window.devicesChart.series[1].data[1].update(devices.assigned.disks);
+    window.devicesChart.series[0].data[2].update(devices.used.flash);;
+    window.devicesChart.series[1].data[2].update(devices.used.disks);
 }
 
 setInterval(volumesWidgetUpdate, 2000);
